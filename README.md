@@ -16,14 +16,15 @@ because all the heavy lifting is delegated to Para. This makes the code easy to 
 
 ## Documentation
 
-See the [README](https://github.com/Erudika/scoold/blob/master/README.md) in the open source repository.
+See the [README](https://github.com/Erudika/scoold) in the open source repository.
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## [Buy Scoold](https://scoold.com)
+## [Buy Scoold PRO](https://scoold.com)
 
+![Screenshot](https://static.scoold.com/splash.png?v1)
 
 ## License
 [EULA](LICENSE)
