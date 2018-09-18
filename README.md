@@ -20,7 +20,7 @@ See the [README](https://github.com/Erudika/scoold/blob/master/README.md) in the
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/Erudika/para/blob/master/CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## [Buy Scoold](https://scoold.com)
 
