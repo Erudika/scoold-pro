@@ -22,7 +22,7 @@ See the [README](https://github.com/Erudika/scoold) in the open source repositor
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## [Buy Scoold PRO](https://scoold.com)
+## [Buy Scoold PRO](https://paraio.com/scoold-pro)
 
 ![Screenshot](https://static.scoold.com/splash.png?v1)
 
