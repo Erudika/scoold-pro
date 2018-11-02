@@ -22,7 +22,9 @@ See the [README](https://github.com/Erudika/scoold) in the open source repositor
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## [Buy Scoold PRO](https://paraio.com/scoold-pro)
+## [Buy Scoold Pro 299 EUR](https://paraio.com/scoold-pro)
+
+**One license per host machine.**
 
 ![Screenshot](https://static.scoold.com/splash.png?v1)
 
