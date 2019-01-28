@@ -26,6 +26,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 **One license per host machine.**
 
+## Blog
+
+### [Read more about Scoold on our blog](https://erudika.com/blog/tags/scoold/)
+
 ![Screenshot](https://static.scoold.com/splash.png?v1)
 
 ## License
