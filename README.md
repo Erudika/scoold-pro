@@ -24,7 +24,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## [Buy Scoold Pro 299 EUR](https://paraio.com/scoold-pro)
 
-**One license per host machine.**
+**One license per host machine, per year.**
 
 ## Blog
 
