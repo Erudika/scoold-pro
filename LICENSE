@@ -1,11 +1,10 @@
 
-End-User License Agreement (EULA) of Scoold PRO
+End-User License Agreement (EULA)
+---------------------------------
 
-This End-User License Agreement ("EULA") is a legal agreement between you and Erudika
+IMPORTANT: THIS SOFTWARE END-USER LICENSE AGREEMENT ("EULA") IS A LEGAL AGREEMENT (“Agreement”) BETWEEN YOU (THE CUSTOMER, EITHER AS AN INDIVIDUAL OR, IF PURCHASED OR OTHERWISE ACQUIRED BY OR FOR AN ENTITY, AS AN ENTITY) AND ERUDIKA. READ IT CAREFULLY BEFORE COMPLETING THE INSTALLATION PROCESS AND USING SCOOLD PRO AND RELATED SOFTWARE COMPONENTS (“SOFTWARE”). IT PROVIDES A LICENSE TO USE THE SOFTWARE AND CONTAINS WARRANTY INFORMATION AND LIABILITY DISCLAIMERS. BY INSTALLING AND USING THE SOFTWARE, YOU ARE CONFIRMING YOUR ACCEPTANCE OF THE SOFTWARE AND AGREEING TO BECOME BOUND BY THE TERMS OF THIS AGREEMENT.
 
 This EULA agreement governs your acquisition and use of our Scoold software ("Software") directly from Erudika or indirectly through a Erudika authorized reseller or distributor (a "Reseller").
-
-Please read this EULA agreement carefully before completing the installation process and using the Scoold software. It provides a license to use the Scoold software and contains warranty information and liability disclaimers.
 
 If you register for a free trial of the Scoold software, this EULA agreement will also govern that trial. By clicking "accept" or installing and/or using the Scoold software, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this EULA agreement.
 
@@ -13,36 +12,84 @@ If you are entering into this EULA agreement on behalf of a company or other leg
 
 This EULA agreement shall apply only to the Software supplied by Erudika herewith regardless of whether other software is referred to or described herein. The terms also apply to any Erudika updates, supplements, Internet-based services, and support services for the Software, unless other terms accompany those items on delivery. If so, those terms apply.
 
-License Grant
 
-Erudika hereby grants you a personal, non-transferable, non-exclusive licence to use the Scoold software on your devices in accordance with the terms of this EULA agreement.
+1. License Types
 
-You are permitted to deploy and run the Scoold software on one host machine only. If you need to run Scoold software on multiple host machines, you must purchase a license for each one of them.  You are responsible for ensuring your device meets the minimum requirements of the Scoold software.
+1.1 General Use. You may install the Software on an unlimited number of Hosts for the purposes of development or testing. You must purchase a license for each production Host. “Host” means any physical or virtual machine which is controlled by you. The source code is not provided.
 
-You are not permitted to:
+1.2 Limited Server License with Source Code. If you purchased a Limited Server License, you may install the Software on up to 5 (five) production Hosts. You must purchase a license for each production Host. “Host” means any physical or virtual machine which is controlled by you. If you need to install the Software on more Hosts than the number outlined above, you must purchase an Unlimited Server License. The source code for the Software is provided.
 
+1.3 Unlimited Server License with Source Code. If you purchased an Unlimited Server License, you may install the Software on an unlimited number of Hosts for the purposes of development or testing. You may also install the Software on an unlimited number of production Hosts. You must purchase a license for each production Host. “Host” means any physical or virtual machine which is controlled by you. The source code for the Software is provided.
 
-- Edit, alter, modify, adapt, translate or otherwise change the whole or any part of the Software nor permit the whole or any part of the Software to be combined with or become incorporated in any other software, nor decompile, disassemble or reverse engineer the Software or attempt to do any such things
-- Reproduce, copy, distribute, resell or otherwise use the Software for any commercial purpose
-- Allow any third party to use the Software on behalf of or for the benefit of any third party
-- Use the Software in any way which breaches any applicable local, national or international law
-- use the Software for any purpose that Erudika considers is a breach of this EULA agreement
+All of the licenses above grant you a non-transferable, non-exclusive right to use the Scoold software on your devices in accordance with the terms of this EULA agreement. You are responsible for ensuring your devices meet the minimum requirements of the Scoold software.
 
+2. License Scope
 
-Intellectual Property and Ownership
+2.1 Archive Copies. You are entitled to make a reasonable amount of copies of the Software for archival purposes. Each copy must reproduce all copyright and other proprietary rights notices on or in the Software Product.
 
-Erudika shall at all times retain ownership of the Software as originally downloaded by you and all subsequent downloads of the Software by you. The Software (and the copyright, and other intellectual property rights of whatever nature in the Software, including any modifications made thereto) are and shall remain the property of Erudika.
+2.2 Electronic Delivery. All Software and license documentation shall be delivered by electronic means unless otherwise specified on the applicable invoice or at the time of purchase. Software shall be deemed delivered when it is made available for download by you (“Delivery”).
 
-Erudika reserves the right to grant licences to use the Software to third parties.
+2.3 Modifications. Erudika shall provide you with source code if that is applicable to your license type. You can create Modifications of the original software. “Modification” means: (a) any addition to or deletion from the contents of a file included in the original Software or previous Modifications created by You, or (b) any new file that contains any part of the original Software or previous Modifications. While you retain all rights to any original work authored by you as part of the Modifications, We continue to own all copyright and other intellectual property rights in the Software.
 
-Termination
+3. Restricted Uses.
 
-This EULA agreement is effective from the date you first use the Software and shall continue until terminated. You may terminate it at any time upon written notice to Erudika.
+3.1 You shall not (and shall not allow any third party to): (a) decompile, disassemble, or otherwise reverse engineer the Software or attempt to reconstruct or discover any source code, underlying ideas, algorithms, file formats or programming interfaces of the Software by any means whatsoever (except and only to the extent that applicable law prohibits or restricts reverse engineering restrictions); (b) distribute, sell, sublicense, rent, lease or use the Software for time sharing, hosting, service provider or like purposes, except as expressly permitted under this Agreement; (c) redistribute the Software or Modifications other than by including the Software or a portion thereof within your own product, which must have substantially different functionality than the Software or Modifications and must not allow any third party to use the Software or Modifications, or any portions thereof, for software development or application development purposes; (d) redistribute the Software as part of a product, "appliance" or "virtual server"; (e) redistribute the Software on any server which is not directly under your control; (f) remove any product identification, proprietary, copyright or other notices contained in the Software; (g) modify any part of the Software, create a derivative work of any part of the Software (except as permitted in Section 4), or incorporate the Software, except to the extent expressly authorized in writing by Erudika; (h) publicly disseminate performance information or analysis (including, without limitation, benchmarks) from any source relating to the Software; (i) utilize any equipment, device, software, or other means designed to circumvent or remove any form of access control or copy protection used by Erudika in connection with the Software, or use the Software together with any authorization code, credentials, serial number, or other copy protection device not supplied by Erudika; (j) use the Software to develop a product which is competitive with any Erudika product offerings; or (k) use unauthorized credentials or keycode(s) or distribute or publish credentials or keycode(s), except as may be expressly permitted by Erudika in writing. If your unique credentials are ever published, Erudika reserves the right to terminate your access without notice.
 
-This EULA was created by eulatemplate.com for Scoold
+3.2 UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE AS PART OF A PRODUCT OR SERVICE THAT PROVIDES SIMILAR FUNCTIONALITY TO THE SOFTWARE ITSELF.
 
-It will also terminate immediately if you fail to comply with any term of this EULA agreement. Upon such termination, the licenses granted by this EULA agreement will immediately terminate and you agree to stop all access and use of the Software. The provisions that by their nature continue and survive will survive any termination of this EULA agreement.
+3.3 UNDER NO CIRCUMSTANCES MAY YOU USE THE SOFTWARE IN ANY WAY WHICH BREACHES ANY APPLICABLE LOCAL, NATIONAL OR INTERNATIONAL LAW.
 
-Governing Law
+3.4 The open source version of the Software ("OSS Version") is licensed under the terms of the Apache License, Version 2.0 and not under this EULA.
 
-This EULA agreement, and any dispute arising out of or in connection with this EULA agreement, shall be governed by and construed in accordance with the laws in the European Union (EU).
+4. Intellectual Property and Ownership. Notwithstanding anything to the contrary contained herein, except for the limited license rights expressly provided herein, Erudika and its suppliers have and will retain all rights, title and interest (including, without limitation, all patent, copyright, trademark, trade secret and other intellectual property rights) in and to the Software and all copies, modifications and derivative works thereof (including any changes which incorporate any of your ideas, feedback or suggestions). You acknowledge that you are obtaining only a limited license right to the Software, and that irrespective of any use of the words “purchase”, “sale” or like terms hereunder no ownership rights are being conveyed to you under this Agreement or otherwise.
+
+5. Fees and Payment. The Software license fees will be due and payable in full as set forth in the applicable invoice or at the time of purchase. You shall be responsible for all taxes, withholdings, duties and levies arising from the order (excluding taxes based on the net income of Erudika).
+
+6. Support, Maintenance and Services. Subject to the terms and conditions of this Agreement, as set forth in your invoice, and as set forth on the Erudika support page (https://erudika.com/#support), priority support and maintenance services are not included with the purchase of your license subscription and are purchased separately.
+
+7. Term of Agreement.
+
+7.1 Term. This Agreement is effective as of the Delivery of the Software and expires at such time as all license and service subscriptions hereunder have expired in accordance with their own terms (the “Term”). For clarification, the term of your license under this Agreement may be perpetual, limited for Evaluation Version, or designated as a fixed-term license in the Invoice, and shall be specified at your time of purchase. Either party may terminate this Agreement (including all related Invoices) if the other party: (a) fails to cure any material breach of this Agreement within thirty (30) days after written notice of such breach, provided that Erudika may terminate this Agreement immediately upon any breach of Section 3 or if you exceed any other restrictions contained in Section 1, unless otherwise specified in this agreement; (b) ceases operation without a successor; or (c) seeks protection under any bankruptcy, receivership, trust deed, creditors arrangement, composition or comparable proceeding, or if any such proceeding is instituted against such party (and not dismissed within sixty (60) days)). Termination is not an exclusive remedy and the exercise by either party of any remedy under this Agreement will be without prejudice to any other remedies it may have under this Agreement, by law, or otherwise.
+
+7.2 Termination. Upon any termination of this Agreement, you shall cease any and all use of any Software and destroy all copies thereof.
+
+7.3 Expiration of License. Upon the expiration of any term under this Agreement, (a) all Software updates and services pursuant to the license shall cease, (b) you may no longer use existing installations of the Software, (c) you may not install the Software on any additional Hosts, and (d) any further use of the Software shall require the purchase of a new license subscription from Erudika.
+
+8. Disclaimer of Warranties. The Software is provided "as is," with all faults, defects and errors, and without warranty of any kind. Erudika does not warrant that the Software will be free of bugs, errors, viruses or other defects, and Erudika shall have no liability of any kind for the use of or inability to use the Software, the Software content or any associated service, and you acknowledge that it is not technically practicable for Erudika to do so.
+To the maximum extent permitted by applicable law, Erudika disclaims all warranties, express, implied, arising by law or otherwise, regarding the Software, the Software content and their respective performance or suitability for your intended use, including without limitation any implied warranty of merchantability, fitness for a particular purpose.
+
+9. Limitation of Liability.
+
+In no event will Erudika be liable for any direct, indirect, consequential, incidental, special, exemplary, or punitive damages or liabilities whatsoever arising from or relating to the Software, the Software content or this Agreement, whether based on contract, tort (including negligence), strict liability or other theory, even if Erudika has been advised of the possibility of such damages.
+
+In no event will Erudika's liability exceed the Software license price as indicated in the invoice. The existence of more than one claim will not enlarge or extend this limit.
+
+10. Remedies. Your exclusive remedy and Erudika’ entire liability for breach of this Agreement shall be limited, at Erudika’ sole and exclusive discretion, to (a) replacement of any defective software or documentation; or (b) refund of the license fee paid to Erudika, payable in accordance with Erudika's refund policy.
+
+11. Consent to the Use of Data. You agree that Erudika and its affiliates may collect and use technical information gathered as part of the product support services. Erudika may use this information solely to improve products and services and will not disclose this information in a form that personally identifies you.
+
+12. Third Party Software.  Examples included in Software may provide links to third party libraries or code (collectively “Third Party Software”) to implement various functions. Third Party Software does not comprise part of the Software. In some cases, access to Third Party Software may be included along with the Software delivery as a convenience for demonstration purposes. Such source code and libraries may be included in the “…/examples” source tree delivered with the Software and do not comprise the Software. Licensee acknowledges (1) that some part of Third Party Software may require additional licensing of copyright and patents from the owners of such, and (2) that distribution of any of the Software referencing or including any portion of a Third Party Software may require appropriate licensing from such third parties.
+
+13. Miscellaneous
+
+13.1 Entire Agreement. This Agreement sets forth our entire agreement with respect to the Software and the subject matter hereof and supersedes all prior and contemporaneous understandings and agreements whether written or oral.
+
+13.2 Amendment. Erudika reserves the right, in its sole discretion, to amend this Agreement from time. Amendments to this Agreement can be located at: https://github.com/Erudika/scoold-pro/blob/master/LICENSE.
+
+13.3 Assignment. You may not assign this Agreement or any of its rights under this Agreement without the prior written consent of Erudika and any attempted assignment without such consent shall be void.
+
+13.4 Export Compliance. You agree to comply with all applicable laws and regulations, including laws, regulations, orders or other restrictions on export, re-export or redistribution of software.
+
+13.5 Indemnification. You agree to defend, indemnify, and hold harmless Erudika from and against any lawsuits, claims, losses, damages, fines and expenses (including attorneys' fees and costs) arising out of your use of the Software or breach of this Agreement.
+
+13.6 Governing Law. This Agreement is governed by the laws of the European Union ("EU"). The jurisdiction and venue for actions related to the subject matter hereof shall be the Bulgarian courts of justice located in Sofia, Bulgaria, and both parties hereby submit to the personal jurisdiction of such courts.
+
+13.7 Attorneys’ Fees and Costs. The prevailing party in any action to enforce this Agreement will be entitled to recover its attorneys’ fees and costs in connection with such action.
+
+13.8 Severability. If any provision of this Agreement is held by a court of competent jurisdiction to be invalid, illegal, or unenforceable, the remainder of this Agreement will remain in full force and effect.
+
+13.9 Waiver. Failure or neglect by either party to enforce at any time any of the provisions of this licence Agreement shall not be construed or deemed to be a waiver of that party's rights under this Agreement.
+
+13.10 Headings. The headings of sections and paragraphs of this Agreement are for convenience of reference only and are not intended to restrict, affect or be of any weight in the interpretation or construction of the provisions of such sections or paragraphs.
+
+14. Contact Information. If you have any questions about this EULA, or if you want to contact Erudika for any reason, please direct correspondence to support@erudika.com.
