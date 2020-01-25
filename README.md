@@ -26,6 +26,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 **One license per host machine, per year.**
 
+## Getting help
+
+- Have a question? - [ask it on Gitter](https://gitter.im/Erudika/scoold)
+- Found a bug? - submit a [bug report here](https://github.com/Erudika/scoold-pro/issues)
+- Ask a question on Stack Overflow using the [`scoold`](https://stackoverflow.com/tags/scoold/info) tag
+- For questions related to Para, use the [`para`](https://stackoverflow.com/tags/para/info) tag on Stack Overflow
+
 ## Blog
 
 ### [Read more about Scoold on our blog](https://erudika.com/blog/tags/scoold/)
