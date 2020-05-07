@@ -15,11 +15,13 @@ This EULA agreement shall apply only to the Software supplied by Erudika herewit
 
 1. License Types
 
-1.1 General Use. You may install the Software on an unlimited number of Hosts for the purposes of development or testing. You must purchase a license for each production Host. “Host” means any physical or virtual machine which is controlled by you. The source code is not provided.
+A “Host” is defined as any physical or virtual machine which runs a single instance of the Software. If two instnaces of the Software run simultaneously on the same physical or virtual machine, that would count as two separate Hosts.
 
-1.2 Limited Server License with Source Code. If you purchased a Limited Server License, you may install the Software on up to 5 (five) production Hosts. You must purchase a license for each production Host. “Host” means any physical or virtual machine which is controlled by you. If you need to install the Software on more Hosts than the number outlined above, you must purchase an Unlimited Server License. The source code for the Software is provided.
+1.1 Basic Server License for General Use. You may install the Software on an unlimited number of Hosts for the purposes of development or testing. You must purchase a license for each production Host. The source code is not provided with this type of license. You are eligible for 1 (one) year worth of Software updates and bug fixes. After the end of that period, you must renew the license.
 
-1.3 Unlimited Server License with Source Code. If you purchased an Unlimited Server License, you may install the Software on an unlimited number of Hosts for the purposes of development or testing. You may also install the Software on an unlimited number of production Hosts. You must purchase a license for each production Host. “Host” means any physical or virtual machine which is controlled by you. The source code for the Software is provided.
+1.2 Server License with Source Code. You may install the Software on an unlimited number of Hosts for the purposes of development or testing. You must purchase a license for each production Host. The source code for the Software is provided with this type of license. You are eligible for 1 (one) year worth of Software updates and bug fixes. After the end of that period, you must renew the license.
+
+1.3 Unlimited Server License with Source Code. You may install the Software on an unlimited number of Hosts (production or development). The source code for the Software is provided with this type of license. You are eligible for 1 (one) year worth of Software updates and bug fixes. After the end of that period, you must renew the license.
 
 All of the licenses above grant you a non-transferable, non-exclusive right to use the Scoold software on your devices in accordance with the terms of this EULA agreement. You are responsible for ensuring your devices meet the minimum requirements of the Scoold software.
 
@@ -29,7 +31,7 @@ All of the licenses above grant you a non-transferable, non-exclusive right to u
 
 2.2 Electronic Delivery. All Software and license documentation shall be delivered by electronic means unless otherwise specified on the applicable invoice or at the time of purchase. Software shall be deemed delivered when it is made available for download by you (“Delivery”).
 
-2.3 Modifications. Erudika shall provide you with source code if that is applicable to your license type. You can create Modifications of the original software. “Modification” means: (a) any addition to or deletion from the contents of a file included in the original Software or previous Modifications created by You, or (b) any new file that contains any part of the original Software or previous Modifications. While you retain all rights to any original work authored by you as part of the Modifications, We continue to own all copyright and other intellectual property rights in the Software.
+2.3 Modifications. Erudika shall provide you with source code if that is applicable to your license type. You can create Modifications of the original software. “Modification” means: (a) any addition to or deletion from the contents of a file included in the original Software or previous Modifications created by You, or (b) any new file that contains any part of the original Software or previous Modifications. While you retain all rights to any original work authored by you as part of the Modifications, We continue to own all copyright and other intellectual property rights on the Software.
 
 3. Restricted Uses.
 
