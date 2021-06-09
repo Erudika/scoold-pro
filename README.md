@@ -14,6 +14,10 @@ because all the heavy lifting is delegated to Para. This makes the code easy to 
 
 **This repository exists mainly for tracking issues and feature requests.**
 
+## [Buy Scoold Pro 299 EUR](https://paraio.com/scoold-pro)
+
+**One license per host machine, per year.**
+
 ## Documentation
 
 See the [README](https://github.com/Erudika/scoold) in the open source repository.
@@ -64,10 +68,6 @@ configuration, allowing it to communicate with Para successfully.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## [Buy Scoold Pro 299 EUR](https://paraio.com/scoold-pro)
-
-**One license per host machine, per year.**
 
 ## Getting help
 
