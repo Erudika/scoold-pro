@@ -1,0 +1,42 @@
+version: '3.4'
+
+services:
+   para:
+     image: erudikaltd/para:latest_stable
+     ports:
+       - "8080:8080"
+     volumes:
+       - type: volume
+         source: paraData
+         target: /para/data
+       - type: volume
+         source: paraLib
+         target: /para/lib
+       - type: bind
+         source: ./para-application.conf
+         target: /para/application.conf
+     restart: always
+     environment:
+       - JAVA_OPTS=-Dconfig.file=/para/application.conf -Dloader.path=/para/lib
+
+   scoold:
+     depends_on:
+       - para
+     image: 374874639893.dkr.ecr.eu-west-1.amazonaws.com/scoold-pro:latest_stable
+     ports:
+       - "8000:8000"
+     volumes:
+       - type: volume
+         source: scooldUploads
+         target: /scoold-pro/uploads
+       - type: bind
+         source: ./scoold-application.conf
+         target: /scoold-pro/application.conf
+     restart: always
+     environment:
+       - JAVA_OPTS=-Dconfig.file=/scoold-pro/application.conf
+       - BOOT_SLEEP=5
+volumes:
+  paraData:
+  paraLib:
+  scooldUploads:
