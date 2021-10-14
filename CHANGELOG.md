@@ -1,3 +1,11 @@
+##  - 2021-10-14T10:12:46Z
+a49037f added options to completely turn off email notifications
+166bc2b fixed signout button having different color than the theme
+5c1ca4e fixed opensearch.xml not properly translated
+59509d2 fixed text in email notifications not properly translated
+9a86462 updated license
+ae2685e fixed security issue - possible to inject HTML in notification emails
+
 ## `1.46.3` - 2021-10-04
 
 - updated Para client to `1.41.2`, fixing critical errors when registering users
