@@ -1,21 +1,19 @@
-## `1.46.4` - 2021-11-09T17:38:02Z
+## `1.46.4` - 2021-11-09
 
-1554228 Release v1.46.4.
-bac6feb fixed Scoold API doesn't accept Para super tokens or JWTs generated with para-cli
-c8a5552 fixed exception message when API returns 401
-4f2cc17 fixed feedback page still visible even if is_default_space_public = false
-b7c9db0 updated installer.sh
-3f4ed80 fixed NPE in HttpUtils
-7851a86 fixed minor redirect vulnerability in HttpUtils
-fd9299b added .editorconfig
-a50af81 updated Para client to 1.41.3
-1ee7bc9 fixed connection retry logic on startup broken after updating ParaClient
-a49037f added options to completely turn off email notifications
-166bc2b fixed signout button having different color than the theme
-5c1ca4e fixed opensearch.xml not properly translated
-59509d2 fixed text in email notifications not properly translated
-9a86462 updated license
-ae2685e fixed security issue - possible to inject HTML in notification emails
+- fixed Scoold API doesn't accept Para super tokens or JWTs generated with para-cli 
+- fixed exception message when API returns 401 
+- fixed feedback page still visible even if `para.is_default_space_public = false`
+- updated `installer.sh` 
+- fixed NPE in `HttpUtils` 
+- fixed minor redirect vulnerability in `HttpUtils`
+- added `.editorconfig` 
+- updated Para client to 1.41.3 
+- fixed connection retry logic on startup broken after updating `ParaClient`
+- added options to completely turn off email notifications 
+- fixed signout button having different color than the theme 5
+- fixed `opensearch.xml` not properly translated 
+- fixed text in email notifications not properly translated 
+- fixed security issue - possible to inject HTML in notification emails
 
 ## `1.46.3` - 2021-10-04
 
