@@ -1,9 +1,8 @@
 ## `1.46.5` - 2021-11-15
-1.46.5
 
 - updated Spring Boot to 2.5.6
-- added note in api.yaml
-- fixed exception ClassNotFoundException: RuntimeDelegateImpl when calling the Scoold API
+- added note in `api.yaml`
+- fixed exception `ClassNotFoundException: RuntimeDelegateImpl` when calling the Scoold API
 - fixed a few HTML errors
 - fixed app manifest for MS Teams
 
