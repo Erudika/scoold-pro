@@ -28,6 +28,21 @@
 - minor fixes in UploadController to allow media uploads
 - fixed CSP header to prevent errors with Google Maps, added new config option para.media_recording_allowed
 
+## `1.47.0` - 2021-11-26
+1.47.0
+
+- minor deprecation fix
+- updated Para client to 1.42.0
+- fixed all JS code should be stripped from inline CSS
+- switched to a more secure login mechanism using short-lived ID tokens (requires latest version of Para!)
+- changed auth cookie name to default to the Para app id - this may log out users!
+- added new security config option - para.security.one_session_per_user = true
+- added Permissions-Policy header
+- fixed missing important properties on exported objects which have @JsonIgnore annotation
+- added support for media recording and uploading from mic/webcam
+- minor fixes in UploadController to allow media uploads
+- fixed CSP header to prevent errors with Google Maps, added new config option para.media_recording_allowed
+
 ## `1.46.5` - 2021-11-15
 
 - updated Spring Boot to 2.5.6
