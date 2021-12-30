@@ -1,29 +1,23 @@
 ## `1.47.1` - 2021-12-30
-1.47.1
 
+- updated Para client to 1.43.1, switched to Java 11
 - moved comment section above the post actions bar
 - fixed custom theme caching
-- fixed possible open redirect in QuestionsController
-- fixed possible (low-severity) CSRF involving space cookies by using SameSite=Strict flag
+- fixed possible open redirect in `QuestionsController`
+- fixed possible (low-severity) CSRF involving space cookies by using `SameSite=Strict` flag
 - fixed user JWT token not invalidated on logout
 - updated Spring Boot to 2.6.2
-- updated Para client
 - fixed redirect loop in /reports
 - heroku java 11 migration
-- updated Para client to 1.43.1, switched to Java 11
-- fixed webhook event comment.create not triggered
-- updated AWS SDK
-- updated dockerfile
-- updated Spring Boot
+- fixed webhook event `comment.create` not triggered
 - added Farsi translation
-- This reverts commit 020d2f2b2df472429a3a9a1b58b5b346d8ef9525.
 - fixed slowdown due to multiple redundant requests to Para API when list of spaces is empty
 - increased the default max. comment length from 255 to 600
 - fixed comment line breaks ignored
 - fixed error message when return-to URI is invalid
 - fixed media recording JS code
-- improved UX around comment and answer form inputs, added new option para.always_hide_comment_forms
-- fixed Permissions-Policy header
+- improved UX around comment and answer form inputs, added new option `para.always_hide_comment_forms`
+- fixed `Permissions-Policy` header
 
 ## `1.47.0` - 2021-11-26
 
