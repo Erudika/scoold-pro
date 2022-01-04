@@ -1,5 +1,4 @@
 ## `1.47.2` - 2022-01-04
-1.47.2
 
 - fixed sort filter not changing
 - updated Para to 1.43.3
