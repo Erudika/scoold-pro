@@ -1,3 +1,32 @@
+## `1.48.0` - 2022-02-07
+- minor refactoring
+- Release v1.48.0.
+- added support for JSON pointers in para.security.oauth.groups_attribute_name for advanced roles mapping
+- fixed connection error message should be printed out when Scoold is connected to a non-existent app
+- added warning in logs when Scoold is connected to the root Para app
+- fixed signature error when Slack sends ping requests to Scoold
+- updated dockerfile
+- bumped year in license headers
+- added log message indicating an invalid Slack request signature
+- fixed password reset link not sent sometimes
+- dockerfile
+- updated Spring Boot to 2.6.3
+- fixed changing the main logo should be reflected in transactional emails, making branding more consistent
+- updated Para client to 1.43.4
+- added delete protection for valuable content - questions with answers and accepted answers
+- changed file uplaoads to Imgur to only work for avatars now
+- added support for uploading avatars to cloud-based image services like Imgur, Cloudinary
+- fixed space selection menu not being clear enough
+- updated AWS SDK
+- changed order of all spaces in dropdown menu
+- fixed all spaces label
+- changed all spaces to be the default view upon fist login
+- removed unused configuration property para.vatar_validation_enabled
+- updated AWS and Azure SDKS
+- exposed file upload methods in the API controller
+- updated translation strings
+- fixed missing translation strings on question filter
+
 ## `1.47.2` - 2022-01-04
 
 - fixed sort filter not changing
