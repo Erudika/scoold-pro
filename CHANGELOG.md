@@ -1,3 +1,8 @@
+## `1.48.1` - 2022-02-09
+- fixed profile picture changes not persisted
+- fixed warning for using root app displayed incorrectly sometimes
+- added log message if OAuth2 user is locked out due to insufficient role privileges
+
 ## `1.48.0` - 2022-02-07
 - minor refactoring
 - Release v1.48.0.
