@@ -1,3 +1,11 @@
+## `1.48.2` - 2022-02-17
+- fixed bug which prevented more complex assignment of groups and spaces from claims returned by an OAuth2 IDP
+- fixed NPE in Teams integration, preventing asking questions from the @bot message dialog
+- fixed 405 error when posting an answer from a specific /write URL
+- fixed write answer button visible when question is closed
+- fixed CSS class in footer when an RTL language is selected
+- updated JWT library
+
 ## `1.48.1` - 2022-02-09
 - fixed profile picture changes not persisted
 - fixed warning for using root app displayed incorrectly sometimes
