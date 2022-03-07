@@ -1,3 +1,21 @@
+## `1.49.0` - 2022-03-07
+- updated Para to 1.45.1
+- added 'rebuild index' button to Admin page
+- fixed clearing a config property which was modified via API does't work
+- added Facebook app ID notice for changed login flow
+- removed Facebook SDK completely from /signin page, in favor of a simple web redirect
+- fixed minor issue in WebhooksController
+- added explanation text when there are no reports found
+- added support for auto-init in docker-compose file
+- fixed application.conf should automatically be created if missing
+- added support for auto-initialization of the Scoold Para app, thus removing the need for any operations with the Para CLI tool
+- added support for a new custom webhook event 'config.update'
+- fixed webhook triggering should be allowed from the API
+- refactoring - removed static fields holding config values from ScooldServer
+- updated API docs to include new config methods
+- major refactoring around Config - reorganized and centralized all config properties
+- fixed a few issues around password reset functionality
+
 ## `1.48.2` - 2022-02-17
 - fixed bug which prevented more complex assignment of groups and spaces from claims returned by an OAuth2 IDP
 - fixed NPE in Teams integration, preventing asking questions from the @bot message dialog
