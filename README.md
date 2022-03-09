@@ -14,9 +14,9 @@ because all the heavy lifting is delegated to Para. This makes the code easy to 
 
 **This repository exists mainly for tracking issues and feature requests.**
 
-## [Buy Scoold Pro 299 EUR](https://paraio.com/scoold-pro)
+## [Buy Scoold Pro 499 EUR](https://paraio.com/scoold-pro)
 
-**One license per host machine, per year.**
+**One-time fee, one license per host machine. Price includes one year of updates and support.**
 
 ## Documentation
 
@@ -26,44 +26,17 @@ See the [README](https://github.com/Erudika/scoold) in the open source repositor
 
 **First, you will need to obain access keys for the private Docker registry for Scoold Pro,
 by [purchasing a Pro license](https://paraio.com/scoold-pro).**
-You can start the whole stack, Para + Scoold, with a single command using `docker-compose`.
-First, create a new directory and copy [`docker-compose.yml`](docker-compose.yml) 
-to it from this repository. Also create these files in the same directory:
 
-1. `para-application.conf` - containing the Para configuration
-2. `scoold-application.conf` - containing the Scoold configuration
+The *easiest way* to create the Scoold stack is to run `docker compose up`.
 
-Example for `para-application.conf`:
-```ini
-para.env = "production"
-para.dao = "H2DAO"
+1. Create a new directory and copy [`docker-compose.yml`](docker-compose.yml) to it from this repository.
+2. Create these two configuration files in the same directory (both files can be left blank for now):
 ```
-
-Example for `scoold-application.conf`:
-```ini
-para.env = "production"
-para.app_name = "Scoold"
-para.endpoint = "http://para:8080"
-para.access_key = "app:scoold"
-para.secret_key = "..."
+$ touch para-application.conf scoold-application.conf
 ```
-Docker Compose automatically creates DNS names for each of the services.
-This is why the exemplary `scoold-application.conf` contains
-`http://para:8080` as the value for `para.endpoint`. The internal IP
-of Para will be resolved by Docker automatically.
+3. `$ docker compose up`
 
-Then you can start both Scoold and Para with Docker Compose like so:
-```
-$ docker-compose up
-```
-Follow the quick start guide above to initialize Para and create a new app for Scoold. Once you have the access keys
-for that app, update `scoold-application.conf` with those and restart the Para + Scoold Docker stack:
-
-1. Stop the containers using <kbd>Ctrl</kbd> + <kbd>C</kbd>
-2. Rerun `docker-compose up`
-
-The same pair of containers will be run, but this time Scoold has the proper
-configuration, allowing it to communicate with Para successfully.
+To stop the containers use <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
 ## Contributing
 
