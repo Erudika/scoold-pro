@@ -1,3 +1,16 @@
+## `1.49.1` - 2022-03-28
+- fixed search filter for answered questions
+- excluded Jackson databind from Spring Boot
+- updated Para Client to 1.45.3
+- added support for uploading avatars to Cloudinary
+- added Cloudinary SDK
+- added translation strings for RSS feed
+- updated AWS SDK
+- added lots of minor visual tweaks and CSS styling, updated MaterializeCSS, EasyMDE plugins
+- updated Nimbus JWT to 9.21
+- fixed app secret should be auto-generated when Scoold's configuration is initialized
+- fixed 504 timeout errors when restoring from backup, if Scoold is running behind a proxy and restore job takes > 60s
+
 ## `1.49.0` - 2022-03-07
 - updated Para to 1.45.1
 - added 'rebuild index' button to Admin page
