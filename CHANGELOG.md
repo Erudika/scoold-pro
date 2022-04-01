@@ -1,3 +1,14 @@
+## `1.49.2` - 2022-04-01
+- updated Para client
+- added web manifest and service worker, thus making Scoold a PWA
+- updated Spring Boot and Para client
+- added cache-busting revision parameter to static assets
+- added webmanifest file generator
+- added Version class for keeping the exact release version of Scoold
+- added response compression
+- added title to search icon button in navbar
+- removed touchstart event in clientside code
+
 ## `1.49.1` - 2022-03-28
 - fixed search filter for answered questions
 - excluded Jackson databind from Spring Boot
