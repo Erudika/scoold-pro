@@ -1,3 +1,9 @@
+## `1.49.3` - 2022-04-09
+- fixed automatic group assignment using claims from OAuth2 providers
+- updated Para client
+- fixed startup code by using `SpringApplicationBuilder`
+- updated Heroku and GAE launch templates
+
 ## `1.49.2` - 2022-04-01
 - updated Para client
 - added web manifest and service worker, thus making Scoold a PWA
