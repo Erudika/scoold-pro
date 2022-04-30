@@ -1,3 +1,13 @@
+## `1.49.4` - 2022-04-30
+- fixed OAuth2 groups mapping attribute name should be blank by default
+- fixed exception not declared
+- fixed EXIF data should be removed from uploaded pictures
+- fixed link to target in reports not absolute
+- fixed profile name not limited in length
+- fixed feed.xml and sitemap.xml show content even when default space is not public
+- fixed moderators should be able to approve answers
+- added option to enable/disable sitemap generation
+
 ## `1.49.3` - 2022-04-09
 - fixed automatic group assignment using claims from OAuth2 providers
 - updated Para client
