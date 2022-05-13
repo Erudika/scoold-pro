@@ -1,3 +1,12 @@
+## `1.49.5` - 2022-05-13
+- updated Para client to 1.45.10
+- fixed Scoold log files should be prefixed with 'scoold' rather than 'para'
+- fixed unhandled exceptions in UploadController resulting in stalled upload progress on the client side
+- fixed mentions not rendered when posting a new answer
+- fixed file uploading stalls when using the S3 storage provider
+- fixed config file should not be saved locally on first startup if `config.url` is set
+- fixed bug in client side code, preventing the rendering of mentions
+
 ## `1.49.4` - 2022-04-30
 - fixed OAuth2 groups mapping attribute name should be blank by default
 - fixed exception not declared
