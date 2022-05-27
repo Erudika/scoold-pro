@@ -1,3 +1,12 @@
+## `1.49.6` - 2022-05-27
+- updated Para client to 1.46.0
+- fixed several bugs in the code responsible for importing data from SO
+- fixed group mapping should only happen for OAuth2 users
+- fixed padding in the backups section on the admin page
+- updated Spring Boot to 2.7.0
+- fixed assets version number should be different than the Scoold version for better security
+- fixed git revision should not be used for assets versioning
+
 ## `1.49.5` - 2022-05-13
 - updated Para client to 1.45.10
 - fixed Scoold log files should be prefixed with 'scoold' rather than 'para'
