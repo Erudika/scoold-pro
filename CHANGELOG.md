@@ -1,3 +1,15 @@
+## `1.49.7` - 2022-06-09
+- updated dependencies
+- fixed password should be auto-generated if missing when creating users via API
+- fixed bug in `ApiController` preventing the creation of new users via API
+- added visual indicators for whichever vote was cast by the current user
+- refactoring: renamed utility method `fetchProfiles()` to `getProfiles()`
+- fixed bug causing reputation to drop on downvotes but not get restored on upvotes
+- fixed search hints not hidden when closing the search box
+- fixed compact view checkbox not reset when filter drawer is closed
+- fixed profile box for questions showing 'deleted user' on Profile > Favorites
+- fixed votes go over the limit if cast in quick succession
+
 ## `1.49.6` - 2022-05-27
 - updated Para client to 1.46.0
 - fixed several bugs in the code responsible for importing data from SO
