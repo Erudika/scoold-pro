@@ -1,3 +1,21 @@
+## `1.50.0` - 2022-06-22
+- added options to allow target attribute for custom links in navbar
+- fixed languages page should only show list of available translations
+- added support for custom badges in user profiles
+- fixed badge order in users automcomplete
+- updated JWT library to 9.23
+- minor fix in config docs
+- added extra details to differentiate users they're selected to be mentioned
+- added new configuration option scoold.user_autocomplete_details_enabled = false
+- fixed profile pic CSS and broken emoji picker on firefox
+- fixed mentions dropdown should not close when typing spaces
+- fixed broken link to post in mention nonitification emails
+- added emoji picker
+- fixed mentioning users by last name not working
+- updated the Ubuntu installer script
+- fixed bug which caused user duplication when importing data from SO
+- fixed vote indicator only visible after refresh
+
 ## `1.49.7` - 2022-06-09
 - updated dependencies
 - fixed password should be auto-generated if missing when creating users via API
