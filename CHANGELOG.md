@@ -1,3 +1,11 @@
+## `1.50.1` - 2022-07-12
+- added new option to change the number of results when mentioning users
+- updated Spring Boot to 2.7.1
+- fixed incorrect indication of upvotes and downvotes on profile page
+- fixed a few issues with returned results when searching for users to mention
+- fixed z-index CSS for emoji picker
+- fixed possible content injection if CSP is explicitly disabled
+
 ## `1.50.0` - 2022-06-22
 - added options to allow target attribute for custom links in navbar
 - fixed languages page should only show list of available translations
