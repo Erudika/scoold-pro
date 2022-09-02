@@ -1,3 +1,18 @@
+## `1.50.2` - 2022-09-02
+- updated Para to 1.46.2
+- fixed CSP violation error when scoold.security.ldap.is_local is enabled
+- added new SAML option for turning off NameID requirement, scoold.security.saml.security.want_nameid
+- fixed bug preventing profile pictures to be set when creating users through the API
+- fixed bug causing moderators to be hidden from the list of users in the default space
+- fixed issue with the Nice Profile badge
+- updated Dutch translation file
+- fixed minor bug causing avatar changed by admin to also change admin's own avatar temporarily
+- added configuration property scoold.security.ldap.ad_mode_enabled for enabling AD auth explicitly
+- fixed typo in configuration documentation
+- fixed HTTP 406 error when calling the backup API from Swagger
+- fixed bug preventing uploading files with uppercase names
+- fixed CSS overflow in pre tag
+
 ## `1.50.1` - 2022-07-12
 - added new option to change the number of results when mentioning users
 - updated Spring Boot to 2.7.1
