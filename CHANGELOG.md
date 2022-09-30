@@ -1,3 +1,13 @@
+## `1.50.3` - 2022-09-30
+- added configuration option to disable Mattermost authentication and login button
+- updated Spring Boot
+- fixed bug limiting the maximum number of favorite tags to 5, instead of 50
+- fixed bug where summary emails would be sent without a subject
+- added support for overriding the S3 endpoint URI for use with S3-compatible storage providers other than AWS
+- added logback.xml
+- added additional subscribe-to-thread button, aka notification bell icon, closes #344
+- fixed bug where moderators and admins are shown incorrectly in search results when editing user spaces in bulk
+
 ## `1.50.2` - 2022-09-02
 - updated Para to 1.46.2
 - fixed CSP violation error when scoold.security.ldap.is_local is enabled
