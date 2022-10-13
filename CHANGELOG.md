@@ -1,3 +1,11 @@
+## `1.50.4` - 2022-10-13
+- added button for admins to delete all reports
+- added rate limiting when creating reports, questions or answers
+- updated Para client
+- updated dependencies
+- added option to hide the Microsoft login button
+- fixed crash on startup when using a custom S3 endpoint URL and region is not set in ENV
+
 ## `1.50.3` - 2022-09-30
 - added configuration option to disable Mattermost authentication and login button
 - updated Spring Boot
