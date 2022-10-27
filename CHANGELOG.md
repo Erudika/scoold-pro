@@ -1,3 +1,13 @@
+## `1.50.5` - 2022-10-27
+- updated Para client
+- updated Spring Boot
+- fixed broken links when Scoold is deployed under a different context path
+- added support for having a few special charaters in tags
+- fixed build
+- updated Para client
+- added new API method for editing question tags
+- updated AWS SDK
+
 ## `1.50.4` - 2022-10-13
 - added button for admins to delete all reports
 - added rate limiting when creating reports, questions or answers
