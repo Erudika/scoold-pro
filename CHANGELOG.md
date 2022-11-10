@@ -1,3 +1,18 @@
+## `1.51.0` - 2022-11-10
+- updated Para client
+- fixed creating a question in the default space from another space doesn't work as expected
+- fixed spaces menu should be sorted alphabetically
+- fixed LDAP auth filter group assignment from LDAP attributes not working with memberOf authorities/groups
+- added more verbose logging for failed requests to the MS Teams Graph API
+- fixed build
+- added new option scoold.security.oauth.state_param_enabled for working around issues with the state param and some IDPs
+- added new query parameter includeReplies=true to API /api/posts to return all questions and answers in a single request
+- added new option scoold.answers_approved_by to control who can accept answers
+- fixed typos in Swagger API document
+- fixed broken default tag option when creating new questions, making it impossible to have a question without tags
+- updated Jose JWT
+- fixed typos in Danish translation
+
 ## `1.50.5` - 2022-10-27
 - updated Para client
 - updated Spring Boot
