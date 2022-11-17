@@ -1,3 +1,13 @@
+## `1.51.1` - 2022-11-17
+- fixed returnto redirect broken when visiting a link to a private space
+- minor fix in ScooldConfig docs
+- fixed CSS issues with fixed nav enabled
+- fixed file upload 403 error code returned if allowed formats overwrite default ones without MIME type specified
+- added more verbose logging for user groups changes via SCIM
+- fixed a few issues around SCIM provisioning
+- fixed issue where questions in space would not be updated when space is renamed
+- added new method in HttpUtils for determining the request origin
+
 ## `1.51.0` - 2022-11-10
 - updated Para client
 - fixed creating a question in the default space from another space doesn't work as expected
