@@ -1,3 +1,14 @@
+## `1.51.2` - 2022-12-09
+- fixed bug where approve answer button was hidden for post authors
+- fixed API Swagger docs not showing correct server URL when a context path is set
+- fixed 404 on redirect after post actions are performed under specific context path
+- fixed default space not assigned when scoold.auto_assign_spaces = 'default' is explicitly set
+- fixed merge post button not hidden for regular users
+- added 405 error exception handler to take care of log spam
+- updated deploy scripts and API docs
+- fixed bug which caused OAuth2 delegated admin groups to be reset when visiting the Admin page
+- refactored option scoold.security.oauth.appid_in_state_param_enabled
+
 ## `1.51.1` - 2022-11-17
 - fixed returnto redirect broken when visiting a link to a private space
 - minor fix in ScooldConfig docs
