@@ -1,3 +1,11 @@
+## `1.51.3` - 2022-12-19
+- fixed styling for user profile boxes in RTL mode (i18n)
+- added new option to override the dark stylesheet only when dark mode is enabled
+- fixed dark mode CSS could not be overridden with user-defined styles
+- fixed direct link to private space not working after login
+- fixed bug preventing Scoold from connecting to a Para server which is deployed under a custom context path
+- added option to disable logging to file `scoold.file_logger_level = 'OFF'`
+
 ## `1.51.2` - 2022-12-09
 - fixed bug where approve answer button was hidden for post authors
 - fixed API Swagger docs not showing correct server URL when a context path is set
