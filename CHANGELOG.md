@@ -25,6 +25,33 @@
 - fixed CC copyright line in footer not hidden when branding is disabled
 - updated API docs
 
+## `1.52.0` - 2023-01-15
+- updated Para client
+- fixed broken checkbox for modifying spaces on admin page
+- refactoring: moved logic for reading and updating all objects to ParaClient, resulting in much cleaner and safer code
+- fixed broken image link for default avatars in summary emails
+- added new option to configure a logo for dark mode, scoold.logo_dark_url
+- added support for assigning spaces to all users from the UI and fixed the spaces API
+- fixed possible infinite redirect loop
+- fixed question box not clickable on mobile
+- added clickable links to custom badges for browsing users with same badge
+- fixed init message on startup not showing actual Para endpoint when custom context path is used
+- added support for toggling admin/mod role from the UI to prevent accidental edits
+- added new option to configure min required tags per question - scoold.min_tags_per_post
+- added support for editing badges in bulk for multiple users at a time
+- added advanced filtering options and compact view mode on the users page for admins and moderators
+- fixed bug which caused no results to be shown when the default space is selected in the menu
+- added option for users to change their emails
+- fixed user search box too hidden on Users page
+- added AWS STS dependency
+- fixed timeout when fetching MS Teams channels list by making the task async
+- fixed not all channels listed in MS Teams integration when selecting a webhook target
+- minor fix for API bad request error message
+- added new option to disable negative votes scoold.downvotes_enabled
+- fixed sign up page is still accessible even if password auth is disabled
+- fixed CC copyright line in footer not hidden when branding is disabled
+- updated API docs
+
 ## `1.51.3` - 2022-12-19
 - fixed styling for user profile boxes in RTL mode (i18n)
 - added new option to override the dark stylesheet only when dark mode is enabled
