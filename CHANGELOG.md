@@ -1,3 +1,18 @@
+## `1.52.1` - 2023-02-16
+- updated dependencies
+- added additional notification settings for team chat DMs (Slack, MM, Teams) on common events
+- fixed API listUsers endpoint not returning embedded user objects
+- added search commands to Teams chat bot which return results as a DM
+- fixed access log not disabled when scoold.file_logger_level=OFF
+- fixed minor logback configuration issue
+- fixed bug breaking the admin mode switch in the navbar
+- added new property to Post class - approvalTimestamp indicating the time when an answer was accepted
+- updated the launch configuration file app.gae.yml for Google App Engine
+- fixed reply notifications not sent to chat channels when the question's author has replied to themself"
+- fixed API not allowing password changes
+- fixed bug preventing edits of Slack/Teams/MM destination channels on admin page
+- fixed bug showing an incorrect default space name
+
 ## `1.52.0` - 2023-01-15
 - updated Para client
 - fixed broken checkbox for modifying spaces on admin page
