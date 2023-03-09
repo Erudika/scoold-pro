@@ -1,3 +1,10 @@
+## `1.52.2` - 2023-03-09
+- updated SnakeYAML to 2.0
+- fixed bug when accepting answers leading to unlimited reputation gains
+- fixed default space shown twice in select inputs and a few other places
+- fixed default space shown twice in menu and on profile page
+- fixed sitemap.xml not containing links to all questions
+
 ## `1.52.1` - 2023-02-16
 - updated dependencies
 - added additional notification settings for team chat DMs (Slack, MM, Teams) on common events
