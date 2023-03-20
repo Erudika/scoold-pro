@@ -1,3 +1,8 @@
+## `1.52.3` - 2023-03-20
+- fixed bug causing the reply button to not work in Mattermost messages
+- fixed broken links to posts in Mattermost integration
+- fixed slowness while generating sitemap
+
 ## `1.52.2` - 2023-03-09
 - updated SnakeYAML to 2.0
 - fixed bug when accepting answers leading to unlimited reputation gains
