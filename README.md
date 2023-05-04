@@ -26,8 +26,20 @@ See the [README](https://github.com/Erudika/scoold) in the open source repositor
 
 **First, you will need to obain access keys for the private Docker registry for Scoold Pro,
 by [purchasing a Pro license](https://paraio.com/scoold-pro).**
+Once you have the necessary credentials for accessing the private Docker registry, download and install
+the [AWS CLI](https://aws.amazon.com/cli/) tool. Then execute the following commands to authenticate:
 
-The *easiest way* to create the Scoold stack is to run `docker compose up`.
+- Configure AWS CLI to use the new credentials with `aws configure` or instruct AWS CLI to use an existing credentials
+profile, e.g. `export AWS_PROFILE=docker`.
+- Authenticate with our ECR registry - a temporary access token will be issued for 12h:
+	```
+	aws ecr get-login-password --region eu-west-1 | \
+		docker login --username AWS --password-stdin 374874639893.dkr.ecr.eu-west-1.amazonaws.com
+	```
+
+If the command above doesn't succeed, you won't be able to pull the latest Scoold Pro image or run `docker compose`.
+
+After authenticating with the private registry, there are just a couple of steps before running `docker compose up`:
 
 1. Create a new directory and copy [`docker-compose.yml`](docker-compose.yml) to it from this repository.
 2. Create these two configuration files in the same directory (both files can be left blank for now):
