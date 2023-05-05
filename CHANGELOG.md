@@ -1,3 +1,19 @@
+## `1.53.0` - 2023-05-05
+- added Italian translation
+- added new option for restricting the creation of new tags by users, scoold.tag_creation_allowed = true
+- updated language files with new machine-translated strings
+- fixed a few untranslated parts of Scoold
+- fixed expired label for API keys
+- fixed bug which breaks JS code when an unescaped apostrophe is contained in custom welcome messages
+- fixed inconsistency - spaces dropdown menu not showing default space for admins/mods
+- fixed issues with default space duplication which resulted in broken All Spaces filter
+- fixed possible space duplication when new users are created
+- fixed NPE in ScooldUtils
+- fixed possible space duplication and overall performance when loading spaces and creating users
+- fixed questions and answers on profile page not showing correct results, missing sticky posts, etc
+- fixed bug in Mattermost integration which causes bot name to change when show post button is clicked
+- updated dependencies
+
 ## `1.52.3` - 2023-03-20
 - fixed bug causing the reply button to not work in Mattermost messages
 - fixed broken links to posts in Mattermost integration
