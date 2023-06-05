@@ -1,3 +1,18 @@
+## `1.54.0` - 2023-06-05
+- fixed issue with Mattermost integration which caused inconsistent behavior when posting from an unlinked MM channel
+- added Mattermost bot for sending DM notifications
+- fixed styling inconsistencies in tabs on Admin page
+- added checkbox to delete all data before importing a zipped backup, on Admin page
+- fixed issues with Mattermost integration which caused confusing behavior when executing bot commands like ask/answer
+- fixed permalink URL in post macro
+- added new option for hiding user profiles and users page - scoold.users_discoverability_enabled
+- fixed questions with empty tags shown incorrectly in Mattermost integration
+- fixed comment form under post not working on AJAX requests
+- added support for deep linking (permalinks) to comments
+- fixed post author shown as deleted user on profile page
+- fixed bug in Mattermost integration resulting in JSON raw string sent as DMs
+- fixed Hebrew language not loaded properly and not shown in list of available translations
+
 ## `1.53.0` - 2023-05-05
 - added Italian translation
 - added new option for restricting the creation of new tags by users, scoold.tag_creation_allowed = true
