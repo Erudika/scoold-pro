@@ -1,3 +1,15 @@
+## `1.54.1` - 2023-07-01
+- updated Spring Boot
+- added xml files to whitelist of supported uploads
+- fixed bug preventing tags from updating when `tag_creation_allowed = false`
+- fixed minor CSS issue - bold text not bold enough
+- added error message for users trying to regsiter and login with an email from unapproved domain
+- added new option for showing an info banner on top the the /signin pages only, `scoold.welcome_message_prelogin`
+- fixed NPE when creating replies in Mattermost when MongoDB is configured as data source
+- minor refactoring - moved a method to `ScooldUtils`
+- fixed possible race condition when setting the access token on `ParaClient`
+- fixed incorrect 'deleted user' shown as author of questions on the /profile page
+
 ## `1.54.0` - 2023-06-05
 - fixed issue with Mattermost integration which caused inconsistent behavior when posting from an unlinked MM channel
 - added Mattermost bot for sending DM notifications
