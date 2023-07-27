@@ -1,3 +1,15 @@
+## `1.55.0` - 2023-07-27
+- updated Para
+- added form for creating new tags on the tags page
+- fixed API endpoint for editing spaces in bulk doesn't allow adding the default space
+- updated Swagger docs for API
+- fixed API endpoint for creating posts does not allow arbitrary IDs
+- added alias URL for questions, /questions/{id}
+- added 'answered' filter on questions page, fixed bad query syntax errors
+- fixed tags autocomplete allows even if tag input when tag creation is disabled
+- added new query parameter notificationsDisabled to API to prevent spam when creating posts in bulk
+- fixed question created with no tags if tag creation is disabled
+
 ## `1.54.1` - 2023-07-01
 - updated Spring Boot
 - added xml files to whitelist of supported uploads
