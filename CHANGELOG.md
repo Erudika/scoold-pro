@@ -1,3 +1,15 @@
+## `1.56.0` - 2023-08-25
+- updated Spring Boot
+- added new config option `scoold.notifications_as_reports_enabled` to allow admins/mods to get notification copies as reports; added button for deleting all unapproved posts
+- improved reports UI, now showing unapproved content which can be approved without leaving the page
+- add new option `scoold.mods_access_all_spaces = true` to allow moderators for assigned spaces only; allowed `scoold.posts_need_approval` to be configured per space
+- added notification switch for admins/mods for subscribing to new answers
+- removed some unnecessary details from the profile page like the IDP badge on the avatar
+- fixed a few issues around the import from SO functions
+- fixed problems when uploading zip files due to MIME type mismatch
+- fixed bug preventing edits when post ID contains punctuation chars
+- added option for not sending scope parameter in OAuth2 token requests `scoold.security.oauth.send_scope_to_token_endpoint`
+
 ## `1.55.0` - 2023-07-27
 - updated Para
 - added form for creating new tags on the tags page
