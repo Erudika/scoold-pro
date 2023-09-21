@@ -1,3 +1,11 @@
+## `1.56.1` - 2023-09-21
+- updated Spring Boot
+- updated MathJax which fixes a few bugs
+- fixed bug preventing users from applying the favorite tags and 'near me' filters
+- added frame-ancestors to CSP header
+- fixed typo in html template
+- added error reporting when auth request to MS Teams fails
+
 ## `1.56.0` - 2023-08-25
 - updated Spring Boot
 - added new config option `scoold.notifications_as_reports_enabled` to allow admins/mods to get notification copies as reports; added button for deleting all unapproved posts
