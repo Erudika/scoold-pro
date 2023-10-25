@@ -1,3 +1,16 @@
+## `1.57.0` - 2023-10-25
+- added support for updating basic user notification options and favorite tags via API
+- fixed broken MathJax rendenring when a new page of data is loaded with AJAX
+- added new moderation button to quickly convert an answer to a comment
+- added reputation counter over user avatar in top right menu
+- minor UX fix - changed copy permalink icon to be more obvious
+- fixed NPE when importing data from SO archive
+- added support for Slack/Mattermost/Teams notification filters
+- added support for setting a new question template for each space
+- added support for having individually assigned moderators for each space
+- added support for pre-polulating text inputs on the ask question page
+- fixed some minor CSS issues
+
 ## `1.56.1` - 2023-09-21
 - updated Spring Boot
 - updated MathJax which fixes a few bugs
