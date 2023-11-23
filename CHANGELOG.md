@@ -1,3 +1,11 @@
+## `1.57.1` - 2023-11-23
+- improved exception handling during profile creation to prevent profile overwrites
+- added additional check before creating a new profile to prevent overwriting of existing users
+- added additional checks and logging when validating API keys
+- fixed caching issue when adding/removing spaces on multiple hosts behind load balancer
+- fixed issue which could cause API keys to be overwritten in DB if a new one is registered quickly after startup
+- fixed bug which caused all users to be notified for questions with no tags
+
 ## `1.57.0` - 2023-10-25
 - added support for updating basic user notification options and favorite tags via API
 - fixed broken MathJax rendenring when a new page of data is loaded with AJAX
