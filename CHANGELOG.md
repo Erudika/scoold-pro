@@ -1,3 +1,10 @@
+## `1.57.2` - 2023-12-06
+- updated Para client to 1.49.1
+- fixed bug preventing external scripts config from being loaded via ENV variable
+- fixed visibility of unapproved questions and answers even if posts_need_approval is set to false
+- added 3 new standard webhook events - question.view, user.signin, user.search
+- fixed issues causing Slack integration to crash while exporting threads
+
 ## `1.57.1` - 2023-11-23
 - improved exception handling during profile creation to prevent profile overwrites
 - added additional check before creating a new profile to prevent overwriting of existing users
