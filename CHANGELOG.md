@@ -1,3 +1,11 @@
+## `1.57.3` - 2024-01-19
+- updated dependencies
+- fixed space dropdown position when asking new questions and not loading templates when changing space
+- fixed user search bar on People page not working as expected for substrings of name
+- fixed broken and inconsistent behavior when using Slack's edit and ask button on threaded messages
+- fixed all cookies should be HttpOnly since JS code does not read any of them
+- minor change of wording in docs
+
 ## `1.57.2` - 2023-12-06
 - updated Para client to 1.49.1
 - fixed bug preventing external scripts config from being loaded via ENV variable
