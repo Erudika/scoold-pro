@@ -1,3 +1,8 @@
+## `1.57.4` - 2024-02-06
+- fixed email verification flow when changing email address on profile page
+- fixed /api/ping endpoint should return error if server isn't healthy
+- fixed missing users due to incorrect query string
+
 ## `1.57.3` - 2024-01-19
 - updated dependencies
 - fixed space dropdown position when asking new questions and not loading templates when changing space
