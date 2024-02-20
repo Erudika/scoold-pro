@@ -1,3 +1,6 @@
+## `1.57.5` - 2024-02-20
+- add new configuration option to enable Scoold to run on two or more different public host URLs
+
 ## `1.57.4` - 2024-02-06
 - fixed email verification flow when changing email address on profile page
 - fixed /api/ping endpoint should return error if server isn't healthy
