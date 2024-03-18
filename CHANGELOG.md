@@ -1,3 +1,17 @@
+## `1.58.0` - 2024-03-18
+- implemented Emailer method for sending messages with attachments
+- minor fix for skipping repeated identical login requests
+- added option to send host_url as an index appended to appid in the state parameter of an auth request
+- fixed issues around reports after parent posts have been deleted, merged or approved; reports will be auto-deleted going forward
+- added new option for auto approval of answers even if questions need approval
+- fixed ambiguous filter for 'unapproved' questions and moved it to the filter drawer on the questions page
+- fixed bad HTML syntax on reports page
+- fixed rare invalid query error message when searching for users with AJAX requests and query contains symbols
+- fixed bug which prevented default space template from loading on first visit to the ask question page
+- minor fix - changed sort order of posts on profile page to be newest first
+- minor fix - added default space to list of available notification filters on settings page
+- minor fix - removed redundant email notification for new posts when post is approved
+
 ## `1.57.5` - 2024-02-20
 - add new configuration option to enable Scoold to run on two or more different public host URLs
 
