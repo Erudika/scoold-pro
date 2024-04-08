@@ -1,3 +1,10 @@
+## `1.58.1` - 2024-04-08
+- updated Para client
+- fixed bug in bulk edit spaces
+- updated API docs
+- updated API docs
+- fixed new space missing in list of spaces if created by other admins, but reappears after restart
+
 ## `1.58.0` - 2024-03-18
 - implemented Emailer method for sending messages with attachments
 - minor fix for skipping repeated identical login requests
