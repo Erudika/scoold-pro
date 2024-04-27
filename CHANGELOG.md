@@ -1,3 +1,18 @@
+## `1.60.0` - 2024-04-27
+- migrated project to Spring Boot 3.x
+- updated Para client to 1.50
+- added new reward for answer authors
+- update API to support tag descriptions
+- added support for tag descriptions
+- native image build config
+- updated deleteAll() methods
+- fixed build with new version of Para Client
+- fixed reports not deleted when question is deleted
+- added space label for posts shown on the reports page
+- added native image build profile
+- added French translation strings
+- updated Dockerfile to JDK 21 Temurin
+
 ## `1.58.1` - 2024-04-08
 - updated Para client
 - fixed bug in bulk edit spaces
