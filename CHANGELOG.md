@@ -1,3 +1,36 @@
+## `1.61.0` - 2024-06-07
+- updated Para client
+- fixed reputation overlay z-index
+- fixed storage service loading in native image
+- fixed broken image file uploads in native image
+- added log message indicating which storage service is used
+- added two-factor authentication implemented with TOTP codes
+- added Akismet API integration and automatic spam protection
+- fixed response content type for config endpoints in ApiController
+- fixed clarity of space label in navbar when a space is selected
+- added tag description on search by tag page
+- fixed loading of external scripts from https
+- improved UX for configuration forms on admin page
+- reorganized and improved configuration panel on Admin page allowing for real-time config changes without restart
+- added support for Webhook property filters
+- fixed confusing error messages around changing email on profile page
+- updated reflection config for native image
+- fixed velocity for loop counter in native image
+- minor fix for unknown version bug in API stats responses
+- minor fix for filters questions page when a tag is also selected
+- added tag descriptions on tag tooltips
+- added option for fetching app version from ENV variable when running as native image
+- added API support for uploading HOCON configuration directly
+- added option for saving server configuration directly using a service token
+- minor fix - approved domains should not be case sensitive
+- added shading plugin for native image
+- updated reflection config for native image
+- removed unused fields in CoreUtils
+- fixed various issues around the native build and added working native image configuration
+- renamed reflection-config.json
+- minor change - removed unnecessary call to ParaObjectUtils
+- added support for searching users by email in the top search box
+
 ## `1.60.0` - 2024-04-27
 - migrated project to Spring Boot 3.x
 - updated Para client to 1.50
