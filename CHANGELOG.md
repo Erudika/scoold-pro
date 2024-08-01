@@ -1,3 +1,20 @@
+## `1.62.0` - 2024-08-01
+- fixed converting answer to comment doesn't update answercount on parent question
+- updated API docs
+- updated dependencies
+- fixed problematic space filter for moderators when browsing the default space
+- added a couple of new webhook events - question.approve and answer.approve to trigger when a mod approves a post
+- fixed login email should not be case-sensitive
+- fixed JS for tooltips on tag descriptions
+- fixed minor bug with Akismet integration
+- added new API endpoint for listing answers for a particular question /api/posts/{id}/answers
+- fixed tooltips for tag descriptions
+- updated reflect-config
+- added support for printing out logs throught the stats API endpoint
+- fixed space caching issue when adding or removing spaces on Admin page
+- fixed bug which caused reports to be left uncleared for posts that were already approved
+- removed Rome dependency and upgraded RSS feed to 2.0
+
 ## `1.61.0` - 2024-06-07
 - updated Para client
 - fixed reputation overlay z-index
