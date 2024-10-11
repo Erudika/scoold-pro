@@ -1,6 +1,17 @@
 ## `1.63.0` - 2024-10-11
 - fixed bug which prevented bulk-edit operations via API for a large number of users
 - updated API controller to allow spaces parameter for /users/{id}/moderator requests
+- fixed bug in previous commit
+- fixed query filter for questions with no accepted answer, when applied through the filter drawer
+- fixed mention links in MS Adaptive cards JSON and other issues around Teams integration
+- fixed issues when using Scoold as native image and working with MS Teams
+- fixed a few issues and bugs around the MS Teams integration
+- added new configuration option to allow private teams listing for the Scoold <-> MS Teams integration
+- fixed Teams integration errors when running Scoold as native image
+
+## `1.63.0` - 2024-10-11
+- fixed bug which prevented bulk-edit operations via API for a large number of users
+- updated API controller to allow spaces parameter for /users/{id}/moderator requests
 - fixed query filter for questions with no accepted answer, when applied through the filter drawer
 - fixed mention links in MS Adaptive cards JSON and other issues around Teams integration
 - fixed issues when using Scoold as native image and working with MS Teams
