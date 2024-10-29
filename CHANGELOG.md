@@ -1,3 +1,16 @@
+## `1.64.0` - 2024-10-29
+- updated Para client
+- added limit for number of returned log lines in API controller
+- fixed redirects
+- updated dependencies
+- replaced zxing library with QR4J for QR code gen
+- refactored config parsing methods
+- fixed URI and paths normalization
+- updated Spring Boot
+- added support for setting a preffered starting space each user individually
+- updated jQuery
+- fixed bug with JS modals on AJAX load
+
 ## `1.63.0` - 2024-10-11
 - fixed bug which prevented bulk-edit operations via API for a large number of users
 - updated API controller to allow spaces parameter for /users/{id}/moderator requests
