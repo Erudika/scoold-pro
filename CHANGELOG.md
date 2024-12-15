@@ -1,3 +1,11 @@
+## `1.64.1` - 2024-12-15
+- added new configuration options for enabling/disabling data import/export and configuration editing from the UI
+- fixed UI bug when hovering over custom badges on profile page
+- fixed profile link issues with # when user discoverability is disabled
+- updated Spring Boot
+- fixed logs returned by API are too long sometimes
+- fixed Velocity exception in pagination.vm when page param doesn't contain digits
+
 ## `1.64.0` - 2024-10-29
 - updated Para client
 - added limit for number of returned log lines in API controller
