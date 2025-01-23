@@ -1,3 +1,12 @@
+## `1.64.2` - 2025-01-23
+- updated Para client
+- fixed bug in clientside JS when loading more results on page (MathJax not defined)
+- fixed bug when importing single JSON file from an SO backup archive
+- fixed issues with configuration API where config properties could not be cleared from config file
+- fixed buggy redirect on login for SEO links containing accent chars in questions and profile links [merged #465]
+- fixed configuration editing bug on Admin page which prevented changes to boolean config properties
+- updated Spring Boot and Velocity dependencies
+
 ## `1.64.1` - 2024-12-15
 - added new configuration options for enabling/disabling data import/export and configuration editing from the UI
 - fixed UI bug when hovering over custom badges on profile page
