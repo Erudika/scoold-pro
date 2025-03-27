@@ -1,3 +1,11 @@
+## `1.64.3` - 2025-03-27
+- updated Para client
+- updated dependencies
+- fixed another bug in Stack Overflow link rewriting code with missing file extensions
+- fixed bug in Stack Overflow link rewriting code
+- fixed Stack Overflow link rewriting pattern for imports from SO
+- updated Spring Boot
+
 ## `1.64.2` - 2025-01-23
 - updated Para client
 - fixed bug in clientside JS when loading more results on page (MathJax not defined)
