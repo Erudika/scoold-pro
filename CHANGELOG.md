@@ -1,3 +1,7 @@
+## `1.64.4` - 2025-04-04
+- fixed bug which broke most API endpoints when Scoold is deployed under a context path
+- increased default header size for client requests to prevent auth failures
+
 ## `1.64.3` - 2025-03-27
 - updated Para client
 - updated dependencies
