@@ -1,3 +1,10 @@
+## `1.64.5` - 2025-05-28
+- updated Para client
+- updated dependencies
+- added support for property filters in Slack/Teams/Mattermost webhooks
+- fixed unnecessary full page reload when saving each configuration change on Admin page
+- fixed broken profile link when server is deployed under a specific context path
+
 ## `1.64.4` - 2025-04-04
 - fixed bug which broke most API endpoints when Scoold is deployed under a context path
 - increased default header size for client requests to prevent auth failures
