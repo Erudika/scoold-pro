@@ -1,3 +1,11 @@
+## `1.65.0` - 2025-10-22
+- added new config option `scoold.security.ldap.displayname_attribute` for mapping the LDAP display name to the user's full name
+- updated dependencies
+- migrated code to use new `StringUtils` namespaces, fixed deprecation warnings
+- added profile link sharing button
+- added new config option `scoold.ai_training_allowed` for permission for AI training on content from the website, implementing the new RSL standard.
+- fixed bug in post links leading to 404 errors, updated dependencies
+
 ## `1.64.5` - 2025-05-28
 - updated Para client
 - updated dependencies
