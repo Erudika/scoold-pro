@@ -50,6 +50,17 @@ $ touch para-application.conf scoold-application.conf
 
 To stop the containers use <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
+## Quick start with Kubernetes
+
+There's a Helm chart inside the `helm/` folder. First edit `helm/scoold/values.yaml` and then you can deploy Scoold Pro to
+Kubernetes with a single command:
+
+```
+cd helm; helm install scooldpro ./scoold
+```
+
+For more info, check the quick start guide at [`helm/README.md`](helm/README.md).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)

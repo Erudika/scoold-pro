@@ -1,0 +1,11 @@
+{{- if .Values.applicationConf }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "scoold.fullname" . }}-config
+  labels:
+    {{- include "scoold.labels" . | nindent 4 }}
+data:
+  application.conf: |
+{{- nindent 4 .Values.applicationConf }}
+{{- end }}

@@ -1,0 +1,19 @@
+apiVersion: v2
+type: application
+appVersion: 1.65.0
+description: Scoold - Stack Overflow in a JAR
+name: scoold
+home: https://scoold.com
+sources:
+- https://github.com/Erudika/scoold
+icon: https://scoold.com/logosq.png
+version: 0.3.0
+keywords:
+- qa
+- q-and-a
+- knowledge-base
+- scoold
+- stackoverflow
+- forum
+- questions
+- answers
