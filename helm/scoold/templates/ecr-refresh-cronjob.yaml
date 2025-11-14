@@ -1,0 +1,65 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "scoold.fullname" . }}-ecr-refresh
+  labels:
+    {{- include "scoold.labels" . | nindent 4 }}
+spec:
+  schedule: {{ .Values.ecrCredentials.refreshSchedule | quote }}
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            {{- include "scoold.labels" . | nindent 12 }}
+        spec:
+          serviceAccountName: {{ include "scoold.ecrHelperServiceAccountName" . }}
+          restartPolicy: OnFailure
+          containers:
+            - name: ecr-refresh
+              image: {{ .Values.ecrCredentials.helper.image }}
+              imagePullPolicy: {{ .Values.ecrCredentials.helper.pullPolicy }}
+              env:
+                - name: AWS_REGION
+                  value: {{ .Values.ecrCredentials.region | quote }}
+                - name: AWS_DEFAULT_REGION
+                  value: {{ .Values.ecrCredentials.region | quote }}
+                - name: ECR_REGISTRY
+                  value: {{ .Values.ecrCredentials.registry | quote }}
+                - name: SECRET_NAME
+                  value: {{ include "scoold.imagePullSecretName" . }}
+                - name: KUBECTL_VERSION
+                  value: {{ .Values.ecrCredentials.helper.kubectlVersion | quote }}
+                - name: AWS_ACCESS_KEY_ID
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "scoold.ecrAwsSecretName" . }}
+                      key: aws_access_key_id
+                - name: AWS_SECRET_ACCESS_KEY
+                  valueFrom:
+                    secretKeyRef:
+                      name: {{ include "scoold.ecrAwsSecretName" . }}
+                      key: aws_secret_access_key
+                - name: KUBE_NAMESPACE
+                  valueFrom:
+                    fieldRef:
+                      fieldPath: metadata.namespace
+              command:
+                - /bin/sh
+                - -c
+                - |
+                  set -euo pipefail
+                  if ! command -v kubectl >/dev/null 2>&1; then
+                    curl -fsSL -o /usr/local/bin/kubectl "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
+                    chmod +x /usr/local/bin/kubectl
+                  fi
+                  PASSWORD=$(aws ecr get-login-password --region "$AWS_REGION")
+                  kubectl create secret docker-registry "$SECRET_NAME" \
+                    --namespace "$KUBE_NAMESPACE" \
+                    --docker-server="$ECR_REGISTRY" \
+                    --docker-username=AWS \
+                    --docker-password="$PASSWORD" \
+                    --dry-run=client -o yaml | kubectl apply -f -

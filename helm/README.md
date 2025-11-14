@@ -43,7 +43,7 @@ The command removes all the Kubernetes components associated with the chart and 
 
 ## Configuration
 
-The following table lists the configurable parameters of the Scoold chart and their default values.
+The following table lists the configurable parameters inside `[values.yaml](values.yaml)` and their default values.
 
 | Parameter                           | Description                                                   | Default                                                  |
 |-------------------------------------|---------------------------------------------------------------|----------------------------------------------------------|
@@ -82,15 +82,17 @@ The following table lists the configurable parameters of the Scoold chart and th
 | `tolerations`                       | Tolerations                                                   | `[]`                                                     |
 | `affinity`                          | Affinity rules                                                | `{}`                                                     |
 
-For more information please refer to the [Scoold README](https://github.com/Erudika/scoold/blob/master/README.md).
-
-When working with the private AWS ECR registry, provide an AWS key pair (`ecrCredentials.accessKeyId` / `ecrCredentials.accessSecretKey`). The chart stores the credentials in a Secret and deploys a helper Job plus CronJob that run `aws ecr get-login-password` inside the cluster. The generated token is continuously applied to the docker-registry Secret referenced by the Deployment, so Kubernetes keeps pulling the private Scoold image without any manual steps. Adjust `ecrCredentials.refreshSchedule` (default every 6 hours) or the helper image/kubectl version if you need different behavior.
-> **Note:** The default helper image (`public.ecr.aws/aws-cli/aws-cli`) includes AWS CLI v2 and downloads the requested kubectl binary (`ecrCredentials.helper.kubectlVersion`) during each run. Swap in an internal image that already bundles both tools if you want to avoid that download.
+When working with the private AWS ECR registry, provide an AWS key pair (`ecrCredentials.accessKeyId` / `ecrCredentials.accessSecretKey`). The chart stores the credentials in a Secret and deploys a helper Job plus CronJob that run `aws ecr get-login-password` inside the cluster. The generated token is continuously applied to the docker-registry Secret referenced by the Deployment, so Kubernetes keeps pulling the private Scoold Pro image without any manual steps. Adjust `ecrCredentials.refreshSchedule` (default every 6 hours) or the helper image/kubectl version if you need different behavior.
 
 A YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
 $ helm install scooldpro ./scoold -f values.yaml
 ```
+Or, when updating the chart with new configuration:
 
-> **Tip**: You can use the default [values.yaml](values.yaml)
+```console
+$ helm upgrade --install scooldpro ./scoold -f values.yaml
+```
+
+For more Scoold configuration options, please refer to the [Scoold README](https://github.com/erudika/scoold#configuration).
