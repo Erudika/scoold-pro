@@ -40,6 +40,9 @@ spec:
             items:
               - key: "application.conf"
                 path: "application.conf"
+        - name: uploadsvol
+          persistentVolumeClaim:
+            claimName: {{ include "scoold.fullname" . }}-uploads
       {{- end }}
       containers:
         - name: {{ .Chart.Name }}
@@ -71,6 +74,8 @@ spec:
           volumeMounts:
             - name: appconfig
               mountPath: /scoold/config
+            - name: uploadsvol
+              mountPath: /scoold/uploads
           {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:

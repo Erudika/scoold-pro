@@ -35,6 +35,13 @@ applicationConf: |
   # Add more config properties here...
   ####################################
 
+persistentVolumes:
+  uploads:
+    accessModes:
+      - ReadWriteOnce
+    size: 2Gi
+    storageClassName: ""
+
 ###################################################
 # JVM command line arguments, exported as JAVA_OPTS
 ###################################################
@@ -83,21 +90,4 @@ tolerations: []
 
 affinity: {}
 
-ecrHelper:
-  enabled: true
-  schedule: "0 */6 * * *"
-  accountId: ""
-  region: ""
-  secretName: ""
-  contactEmail: ""
-  awsSecretRef:
-    name: "scoold"
-    key: "aws_ecr_secret"
-  accessKeyId: ""
-  serviceAccount:
-    name: ""
-    annotations: {}
-  image:
-    repository: odaniait/aws-kubectl
-    tag: latest
-    pullPolicy: IfNotPresent
+

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "scoold.fullname" . }}-uploads
+  labels:
+    {{- include "scoold.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    {{- range .Values.persistentVolumes.uploads.accessModes }}
+    - {{ . }}
+    {{- end }}
+  resources:
+    requests:
+      storage: {{ .Values.persistentVolumes.uploads.size }}
+  {{- with .Values.persistentVolumes.uploads.storageClassName }}
+  storageClassName: {{ . | quote }}
+  {{- end }}

@@ -55,6 +55,9 @@ The following table lists the configurable parameters of the Scoold chart and th
 | `service.port`                      | Service HTTP port                                             | `8000`                                                   |
 | `service.name`                      | Service port name                                             | `http`                                                   |
 | `applicationConf`                   | Scoold configuration                                          | Sample block in `values.yaml`                            |
+| `persistentVolumes.uploads.size`       | Requested capacity for `/scoold/uploads` PVC               | `2Gi`                                                    |
+| `persistentVolumes.uploads.accessModes`| Access modes for `/scoold/uploads` PVC                     | `[ReadWriteOnce]`                                        |
+| `persistentVolumes.uploads.storageClassName` | StorageClass for `/scoold/uploads` PVC               | `""`                                                     |
 | `javaOpts`                          | `JAVA_OPTS` JVM arguments                                     | `-Xmx512m -Xms512m -Dconfig.file=/scoold/config/application.conf` |
 | `podAnnotations`                    | Pod annotations                                               | `{}`                                                     |
 | `extraEnvs`                         | Extra environment variables                                   | `[]`                                                     |
