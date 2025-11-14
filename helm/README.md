@@ -68,7 +68,7 @@ The following table lists the configurable parameters of the Scoold chart and th
 | `nodeSelector`                      | Node selector                                                 | `{}`                                                     |
 | `tolerations`                       | Tolerations                                                   | `[]`                                                     |
 | `affinity`                          | Affinity rules                                                | `{}`                                                     |
-| `ecrHelper.enabled`                 | Enable the optional ECR credential helper                     | `false`                                                  |
+| `ecrHelper.enabled`                 | Enable the optional ECR credential helper                     | `true`                                                   |
 
 For more information please refer to the [Scoold README](https://github.com/Erudika/scoold/blob/master/README.md).
 

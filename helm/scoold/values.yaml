@@ -84,7 +84,7 @@ tolerations: []
 affinity: {}
 
 ecrHelper:
-  enabled: false
+  enabled: true
   schedule: "0 */6 * * *"
   accountId: ""
   region: ""
