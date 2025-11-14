@@ -52,3 +52,34 @@ app.kubernetes.io/name: {{ include "scoold.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
 
+{{/*
+Return the name of the image pull secret.
+*/}}
+{{- define "scoold.imagePullSecretName" -}}
+{{- if .Values.ecrCredentials.secretName -}}
+{{- .Values.ecrCredentials.secretName | trunc 63 | trimSuffix "-" -}}
+{{- else -}}
+{{- printf "%s-regcred" (include "scoold.fullname" .) | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+{{- end -}}
+
+{{/*
+Render an empty dockerconfigjson payload used as a placeholder.
+*/}}
+{{- define "scoold.emptyDockerConfig" -}}
+{{- dict "auths" (dict) | toJson | b64enc -}}
+{{- end -}}
+
+{{/*
+Return the service account used by the ECR helper job/cronjob.
+*/}}
+{{- define "scoold.ecrHelperServiceAccountName" -}}
+{{- printf "%s-ecr-helper" (include "scoold.fullname" .) | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+
+{{/*
+Return the name of the AWS credential secret.
+*/}}
+{{- define "scoold.ecrAwsSecretName" -}}
+{{- printf "%s-ecr-aws-creds" (include "scoold.fullname" .) | trunc 63 | trimSuffix "-" -}}
+{{- end -}}

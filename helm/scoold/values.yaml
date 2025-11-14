@@ -16,6 +16,21 @@ image:
   pullPolicy: IfNotPresent
   pullSecrets: []
 
+######################################
+# AWS ECR authentication configuration
+######################################
+ecrCredentials:
+  registry: 374874639893.dkr.ecr.eu-west-1.amazonaws.com
+  region: eu-west-1
+  accessKeyId: ""
+  accessSecretKey: ""
+  secretName: ""
+  refreshSchedule: "0 */6 * * *"
+  helper:
+    image: public.ecr.aws/aws-cli/aws-cli:2.15.30
+    pullPolicy: IfNotPresent
+    kubectlVersion: v1.29.2
+
 service:
   name: http
   type: ClusterIP
@@ -89,5 +104,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-

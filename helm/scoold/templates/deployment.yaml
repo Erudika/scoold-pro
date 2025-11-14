@@ -26,12 +26,12 @@ spec:
         {{- end }}
       {{- end }}
     spec:
-      {{- with .Values.image.pullSecrets }}
+      {{- $pullSecrets := .Values.image.pullSecrets }}
       imagePullSecrets:
-        {{- range . }}
+        - name: {{ include "scoold.imagePullSecretName" . }}
+        {{- range $pullSecrets }}
         - name: {{ . }}
         {{- end }}
-      {{- end }}
       {{- if .Values.applicationConf }}
       volumes:
         - name: appconfig
@@ -52,14 +52,14 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: {{ .Values.service.port }}
-          readinessProbe:
-            httpGet:
-              path: /
-              port: {{ .Values.service.port }}
+          # livenessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: {{ .Values.service.port }}
+          # readinessProbe:
+          #   httpGet:
+          #     path: /
+          #     port: {{ .Values.service.port }}
           {{- with .Values.resources }}
           resources:
             {{- toYaml . | nindent 12 }}

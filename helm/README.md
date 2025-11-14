@@ -12,7 +12,7 @@ We also offer a fully managed Para service at [ParaIO.com](https://paraio.com)
 ## Prerequisites
 
 - Para backend service (latest version recommended; [Helm chart](https://github.com/Erudika/para/tree/master/helm))
-- Access to the private Scoold Pro Docker registry on ECR
+- Access credentials for the private Scoold Pro Docker registry on ECR
 - Helm 3.0+
 - Kubernetes 1.21+ (for the optional CronJob helper)
 
@@ -21,10 +21,10 @@ We also offer a fully managed Para service at [ParaIO.com](https://paraio.com)
 First of all, make sure you have followed the [guide to get access to the private Docker registry on ECR here.](https://github.com/Erudika/scoold/?tab=readme-ov-file#docker-registry-for-scoold-pro-images)
 Access to the private Docker registry can be requested by emailing support, after you purchase a Scoold Pro license.
 
-In the `./helm/` directory of this repo, execute the following console command:
+In the `./helm/` directory of this repo, execute the following console command, while replacing the values `{ecr_key_id}` and `{ecr_secret}` with your ECR credentials:
 
 ```console
-$ helm install scooldpro ./scoold
+$ helm install scooldpro ./scoold --set ecrCredentials.accessKeyId={ecr_key_id},ecrCredentials.accessSecretKey={ecr_secret}
 ```
 
 The command deploys Scoold on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
@@ -50,7 +50,17 @@ The following table lists the configurable parameters of the Scoold chart and th
 | `image.repository`                  | Scoold image name                                             | `374874639893.dkr.ecr.eu-west-1.amazonaws.com/scoold-pro`|
 | `image.tag`                         | Scoold image tag                                              | `1.65.0`                                                 |
 | `image.pullPolicy`                  | Image pull policy                                             | `IfNotPresent`                                           |
-| `image.pullSecrets`                 | References to image pull secrets                              | `[]`                                                     |
+| `image.pullSecrets`                 | References to extra image pull secrets                         | `[]`                                                     |
+| `ecrCredentials.registry`           | Registry host used inside the generated Secret                 | `374874639893.dkr.ecr.eu-west-1.amazonaws.com`           |
+| `ecrCredentials.region`             | AWS region passed to the helper job                            | `eu-west-1`                                              |
+| `ecrCredentials.accessKeyId`        | AWS access key ID stored in a Secret                          | `""`                                                    |
+| `ecrCredentials.accessSecretKey`    | AWS secret access key stored in a Secret                      | `""`                                                    |
+| `ecrCredentials.secretName`         | Override for the generated docker-registry Secret name        | `""`                                                    |
+| `ecrCredentials.refreshSchedule`    | Cron expression for refreshing the pull secret                | `"0 */6 * * *"`                                          |
+| `ecrCredentials.helper.image`       | Container image used for the helper Job/CronJob               | `public.ecr.aws/aws-cli/aws-cli:2.15.30`                 |
+| `ecrCredentials.helper.pullPolicy`  | Image pull policy for the helper Job/CronJob                  | `IfNotPresent`                                           |
+| `ecrCredentials.helper.kubectlVersion` | Version of kubectl downloaded inside the helper Pods       | `v1.29.2`                                                |
+| `ecrCredentials.helper.pullPolicy`  | Image pull policy for the helper Job/CronJob                  | `IfNotPresent`                                           |
 | `service.type`                      | Kubernetes Service type                                       | `ClusterIP`                                              |
 | `service.port`                      | Service HTTP port                                             | `8000`                                                   |
 | `service.name`                      | Service port name                                             | `http`                                                   |
@@ -71,9 +81,11 @@ The following table lists the configurable parameters of the Scoold chart and th
 | `nodeSelector`                      | Node selector                                                 | `{}`                                                     |
 | `tolerations`                       | Tolerations                                                   | `[]`                                                     |
 | `affinity`                          | Affinity rules                                                | `{}`                                                     |
-| `ecrHelper.enabled`                 | Enable the optional ECR credential helper                     | `true`                                                   |
 
 For more information please refer to the [Scoold README](https://github.com/Erudika/scoold/blob/master/README.md).
+
+When working with the private AWS ECR registry, provide an AWS key pair (`ecrCredentials.accessKeyId` / `ecrCredentials.accessSecretKey`). The chart stores the credentials in a Secret and deploys a helper Job plus CronJob that run `aws ecr get-login-password` inside the cluster. The generated token is continuously applied to the docker-registry Secret referenced by the Deployment, so Kubernetes keeps pulling the private Scoold image without any manual steps. Adjust `ecrCredentials.refreshSchedule` (default every 6 hours) or the helper image/kubectl version if you need different behavior.
+> **Note:** The default helper image (`public.ecr.aws/aws-cli/aws-cli`) includes AWS CLI v2 and downloads the requested kubectl binary (`ecrCredentials.helper.kubectlVersion`) during each run. Swap in an internal image that already bundles both tools if you want to avoid that download.
 
 A YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
