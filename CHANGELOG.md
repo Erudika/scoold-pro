@@ -1,3 +1,43 @@
+## `1.66.0` - 2026-01-26
+- updated Para client and Spring Boot to 4.0.2
+- fixed bug causing exception when a file with non-ascii chars in the name is downloaded
+- fixed bug which caused broken links for all uploaded files when the server's host_url or context_path has changed
+- minor CSS fix for comment images showing up too big
+- fixed upload links should be relative and not contain the host url
+- updated `reachability-metadata.json`
+- fixed S3 config loading settings
+- fixed optimization of multiple requests sent to Para, increasing UI load times
+- fixed app settings API called twice in a row for no reason
+- fixed `service-worker.js` duplicate requests to server by disabling preloads
+- updated `reachability-metadata.json`
+- removed calls to commons-io `IOUtils`
+- added option to load config from S3 on startup
+- updated native-image build configuration
+- fixed native-image build
+- fixed unused exception in `UploadController`
+- added view query parameter to static files, added `cache-control` header
+- changed native image output package name
+- minor refactoring - removed `javax.inject` API, fixed issues with native image
+- fixed current space selection ambiguity, by showing space name in navbar
+- fixed settings form not triggering
+- added SBOM plugin in `pom.xml`
+- removed support for local SAML and LDAP authentication in favor of the centralized SAML/LDAP authenticaiton filters in Para
+- upgraded Spring Boot to v4.0
+- minor styling changes on the backups page
+- reorganized layout on the settings page
+- updated language file
+- removed the use of Google Maps for the 'near me' feature, refactored location input autocomplete
+- bump Java compatibility baseline to 21
+- fixed og:url meta tag in base html template
+- removed dependency on Akismet Kotlin client
+- removed dependency on Azure SDK for blob storage
+- updated dependencies
+- removed AWS SDK dependency in favor of the lightweight Java client for AWS
+- added `.dockerignore`
+- updated `Dockerfile`
+- updated `pom.xml` for native image
+- minor CSS fix for profile boxes on the people page
+
 ## `1.65.0` - 2025-10-22
 - added new config option `scoold.security.ldap.displayname_attribute` for mapping the LDAP display name to the user's full name
 - updated dependencies
