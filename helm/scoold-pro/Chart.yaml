@@ -1,11 +1,11 @@
 apiVersion: v2
 type: application
-appVersion: 1.65.0
-description: Scoold - Stack Overflow in a JAR
-name: scoold
+appVersion: 1.66.0
+description: Scoold Pro - Knowledge sharing for your team
+name: scoold-pro
 home: https://scoold.com
 sources:
-- https://github.com/Erudika/scoold
+- https://github.com/Erudika/scoold-pro
 icon: https://scoold.com/logosq.png
 version: 0.3.0
 keywords:
