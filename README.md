@@ -39,14 +39,11 @@ profile, e.g. `export AWS_PROFILE=docker`.
 
 If the command above doesn't succeed, you won't be able to pull the latest Scoold Pro image or run `docker compose`.
 
-After authenticating with the private registry, there are just a couple of steps before running `docker compose up`:
+After authenticating with the private registry, you can proceed with running `docker compose up`, using this repository:
 
-1. Create a new directory and copy [`docker-compose.yml`](docker-compose.yml) to it from this repository.
-2. Create these two configuration files in the same directory (both files can be left blank for now):
+```bash
+docker compose -f https://github.com/Erudika/scoold-pro.git up
 ```
-$ touch para-application.conf scoold-application.conf
-```
-3. `$ docker compose up`
 
 To stop the containers use <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 
