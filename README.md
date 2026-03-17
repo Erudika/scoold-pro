@@ -53,7 +53,7 @@ There's a Helm chart inside the `helm/` folder. First edit `helm/scoold/values.y
 Kubernetes with a single command:
 
 ```
-cd helm; helm install scooldpro ./scoold
+cd helm; helm install scooldpro ./scoold-pro
 ```
 
 For more info, check the quick start guide at [`helm/README.md`](helm/README.md).

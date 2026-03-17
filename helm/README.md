@@ -24,7 +24,7 @@ Access to the private Docker registry can be requested by emailing support, afte
 In the `./helm/` directory of this repo, execute the following console command, while replacing the values `{ecr_key_id}` and `{ecr_secret}` with your ECR credentials:
 
 ```console
-$ helm install scooldpro ./scoold --set ecrCredentials.accessKeyId={ecr_key_id},ecrCredentials.accessSecretKey={ecr_secret}
+$ helm install scooldpro ./scoold-pro --set ecrCredentials.accessKeyId={ecr_key_id},ecrCredentials.accessSecretKey={ecr_secret}
 ```
 The command deploys Scoold on the Kubernetes cluster in the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
 
@@ -35,7 +35,7 @@ Then modify `values.yaml` and add this Scoold configuration property:
 ```ini
 scoold.autoinit.root_app_secret_key="{secret key for root Para app}"
 ```
-Finally, run `helm upgrade --install scoold ./scoold`.
+Finally, run `helm upgrade --install scooldpro ./scoold-pro`.
 
 > **Tip**: List all releases using `helm list`
 
@@ -95,12 +95,12 @@ When working with the private AWS ECR registry, provide an AWS key pair (`ecrCre
 A YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-$ helm install scooldpro ./scoold -f values.yaml
+$ helm install scooldpro ./scoold-pro -f values.yaml
 ```
 Or, when updating the chart with new configuration:
 
 ```console
-$ helm upgrade --install scooldpro ./scoold -f values.yaml
+$ helm upgrade --install scooldpro ./scoold-pro -f values.yaml
 ```
 
 For more Scoold configuration options, please refer to the [Scoold README](https://github.com/erudika/scoold#configuration).
