@@ -1,16 +1,44 @@
-![Scoold Q&A](https://raw.githubusercontent.com/Erudika/scoold/master/assets/header-pro.png)
+<div align="center">
+  <br>
+  <picture>
+	<source media="(prefers-color-scheme: dark)" srcset="https://scoold.com/logo-dark.svg"/>
+	<source media="(prefers-color-scheme: light)" srcset="https://scoold.com/logo.svg"/>
+	<img width="360" alt="Scoold Logo" src="https://scoold.com/logo.svg"/>
+  </picture>
+  <br><br>
+  <h3>
+	The most effective way to share knowledge within your team or organization
+  </h3>
+</div>
+<div align="center">
+
+**Scoold Pro** is a Q&A and a knowledge sharing platform for teams, inspired by Stack Overflow.
+<br>
+Enterprise-ready, super customizable and lightweight.
+
+**Scoold Pro** is the perfect knowledge sharing platform for your company or team.
+The pricing is flat, without limits, the license - perpetual.
+Are you still paying per seat in 2026? **Scoold Pro** is the knowledge sharing platform **to migrate to!**
+
+</div>
+
+<div align="center">
+
+[![Join the chat at https://gitter.im/Erudika/scoold](https://badges.gitter.im/Erudika/scoold.svg)](https://gitter.im/Erudika/scoold?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+</div>
+
+<div align="center">
+
+<a href="https://scoold.com">Website</a> &nbsp;-&nbsp; <a href="https://scoold.com/documentation/">Documentation</a> &nbsp;-&nbsp; <a href="https://demo.scoold.com">Demo</a> &nbsp;-&nbsp; <a href="https://scoold.com/pricing/">Pricing</a> &nbsp;-&nbsp; <a href="https://scoold.com/documentation/reference/scoold-api/">API</a>
+
+</div>
 
 ## Scoold Pro
 
 [![Join the chat at https://gitter.im/Erudika/scoold](https://badges.gitter.im/Erudika/scoold.svg)](https://gitter.im/Erudika/scoold?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**Scoold** is a Q&A platform written in Java. The project was created back in 2008, released in 2012 as social network for
-schools inspired by StackOverflow, and as of 2017 it has been refactored, repackaged and open-sourced.
-The primary goal of this project is educational but it can also work great as a Q&A/support section for your website.
-
-Scoold can run on Heroku or any other PaaS. It's lightweight (~4000 LOC) - the backend is handled by a separate service called
-[Para](https://github.com/Erudika/para). Scoold does not require a database, and the controller logic is really simple
-because all the heavy lifting is delegated to Para. This makes the code easy to read and can be learned quickly by junior developers.
+**Scoold Pro** is a Q&A platform written in Java. Scoold Pro is a privacy-first, self-hosted Q&A platform, forum, and knowledge base platform for your team.
 
 **This repository exists mainly for tracking issues and feature requests.**
 
@@ -20,47 +48,16 @@ because all the heavy lifting is delegated to Para. This makes the code easy to 
 
 ## Documentation
 
-See the [README](https://github.com/Erudika/scoold) in the open source repository.
+The documentation for Scoold Pro is located at [scoold.com/documentation](https://scoold.com/documentation/)
 
-## Quick start with Docker Compose
+## Scoold Pro cloud hosting
 
-**First, you will need to obain access keys for the private Docker registry for Scoold Pro,
-by [purchasing a Pro license](https://paraio.com/scoold-pro).**
-Once you have the necessary credentials for accessing the private Docker registry, download and install
-the [AWS CLI](https://aws.amazon.com/cli/) tool. Then execute the following commands to authenticate:
+We offer official hosting for Scoold Pro at [Scoold Cloud](https://scoold.com/cloud-hosting/).
 
-- Configure AWS CLI to use the new credentials with `aws configure` or instruct AWS CLI to use an existing credentials
-profile, e.g. `export AWS_PROFILE=docker`.
-- Authenticate with our ECR registry - a temporary access token will be issued for 12h:
-	```
-	aws ecr get-login-password --region eu-west-1 | \
-		docker login --username AWS --password-stdin 374874639893.dkr.ecr.eu-west-1.amazonaws.com
-	```
+## Support
 
-If the command above doesn't succeed, you won't be able to pull the latest Scoold Pro image or run `docker compose`.
-
-After authenticating with the private registry, you can proceed with running `docker compose up`, using this repository:
-
-```bash
-docker compose -f https://github.com/Erudika/scoold-pro.git up
-```
-
-To stop the containers use <kbd>Ctrl</kbd> + <kbd>C</kbd>.
-
-## Quick start with Kubernetes
-
-There's a Helm chart inside the `helm/` folder. First edit `helm/scoold/values.yaml` and then you can deploy Scoold Pro to
-Kubernetes with a single command:
-
-```
-cd helm; helm install scooldpro ./scoold-pro
-```
-
-For more info, check the quick start guide at [`helm/README.md`](helm/README.md).
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+You can get support here by submitting an issue. Also you can head over to the Gitter chat room for help.
+[Paid/priority support is also available](https://erudika.com/support/).
 
 ## Getting help
 
@@ -71,9 +68,17 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Blog
 
-### [Read more about Scoold on our blog](https://erudika.com/blog/tags/scoold/)
-
-![Screenshot](https://static.scoold.com/splash.png?v1)
+### [Get the latest updates and insights form our Scoold blog](https://scoold.com/blog/)
 
 ## License
+
 [EULA](LICENSE)
+
+<div align="center">
+
+![Scoold Q&A](https://raw.githubusercontent.com/Erudika/scoold/master/assets/header.png)
+
+Stack Overflow in a JAR
+
+Made in the EU 🇪🇺 by Erudika
+</div>
