@@ -1,3 +1,15 @@
+## `1.66.1` - 2026-03-31
+- fixed feedback ownership not verified on delete
+- fixed location box duplication when editing questions
+- fixed checkbox rendering in Markdown
+- added JSON-LD metadata for questions, answers and profiles
+- fixed sitemap should be disabled for private sites
+- fixed webmanifest images and config, added new favicons
+- updated Para client
+- fixed styling on task lists in Markdown and the padding on the location input field, under the markdown editor
+- updated dependencies
+- fixed NPE on Admin page when rendering overloaded config
+
 ## `1.66.0` - 2026-01-26
 - updated Para client and Spring Boot to 4.0.2
 - fixed bug causing exception when a file with non-ascii chars in the name is downloaded
