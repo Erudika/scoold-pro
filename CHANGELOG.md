@@ -1,3 +1,9 @@
+## `1.66.2` - 2026-04-06
+- refactoring - declared explicit request parameters in `ApiController` methods
+- fixed unsafe handling of postId when creating new questions in `QuestionsController.post()`
+- added missing filter on questions page for listing questions with accepted answer
+- removed local MathJax script in favor of the up-to-date CDN-hosted scripts
+
 ## `1.66.1` - 2026-03-31
 - fixed feedback ownership not verified on delete
 - fixed location box duplication when editing questions
