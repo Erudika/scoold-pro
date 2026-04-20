@@ -1,3 +1,17 @@
+## `1.67.0` - 2026-04-20
+- **added MCP server implementation based on Spring AI**
+- **added new feature - personal access tokens for the Scoold API and MCP serv
+- added security checks in `ApiController` for better handling of personal access tokens
+- updated `reachability-metadata.json`
+- added personal token expiration configuration property
+- minor fix for wrong default space name in `Post` class
+- minor fix for null content body in comments and posts
+- minor fix for invalid addition to an empty list in `ApiController`
+- minor fix for occasionally incorrect appid value shown in API responses
+- fixed bug where reports count badge is not updated instantly when reports are deleted
+- added optional override entity map in `ApiController` creation methods
+- added explicit Pager request parameters in `ApiController`
+
 ## `1.66.2` - 2026-04-06
 - refactoring - declared explicit request parameters in `ApiController` methods
 - fixed unsafe handling of postId when creating new questions in `QuestionsController.post()`
