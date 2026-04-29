@@ -1,3 +1,17 @@
+## `1.67.1` - 2026-04-29
+- fixed broken default descending sort order
+- updated import code
+- fixed minor issue in AdminController
+- improved import task speed
+- updated dependencies
+- updated reachability-metadata.json and Para Client
+- added ParaClient's async methods where we have slow operations
+- refactoring async Slack notification methods to use the async HTTP client, instead of Para.asyncExecute()
+- fixed issues with the import from SO feature
+- added workaround for the file upload limitiation when restoring large archives
+- added Catalan and Albanian translations
+- added support for service tokens used by Scoold Cloud for health checks
+
 ## `1.67.0` - 2026-04-20
 - **added MCP server implementation based on Spring AI**
 - **added new feature - personal access tokens for the Scoold API and MCP serv
