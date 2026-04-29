@@ -1,6 +1,6 @@
 apiVersion: v2
 type: application
-appVersion: 1.67.0
+appVersion: 1.67.1
 description: Scoold Pro - Knowledge sharing for your team
 name: scoold-pro
 home: https://scoold.com
