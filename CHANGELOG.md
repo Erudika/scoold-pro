@@ -1,3 +1,40 @@
+## `1.68.0` - 2026-05-20
+- updated easyMDE editor
+- updated emojis
+- fixed icon font size in CSS
+- added cities.json file
+- fixed broken links to user profile page when rendering comments
+- fixed NPE when verifying API tokens without an expiration time
+- fixed NPE in ScooldRequestInterceptor
+- minor fix for invalid API key errors on Admin page
+- fixed issues with native image
+- added new option to enable SAML attributes delegation to Scoold, added support for spaces and groups assignment from SAML attributes
+- added new option to enable LDAP attributes delegation to Scoold, added support for space assignment from LDAP attributes
+- fixed new badge notifications not showing for users returning to the site after some time
+- added Croatian and Czech translations
+- added simplified periodic summary email execution for restricted single-threaded environments
+- added button on profile page to allow admins to stop all email notifications for a user
+- added new API endpoints for managing user notification subscriptions, fixed notification settings not persisting bug, and other minor bugs
+- added rate-limiting for questions and answers to prevent post duplication and spam
+- added caching for static resources
+- minor fix in footer
+- fixed A11Y issues, colors and contrast, fixed UI issues in dark mode
+- fixed bug in UI configuration manager on Admin page
+- removed all use of FontAwesome, replaced with inline SVGs, removed external font Roboto, huge cleanup and many UI fixes
+- testing with embedded SVGs
+- updated dependencies
+- minor fix - added defer to scripts in footer
+- updated PrismJS
+- greatly improved Markdown preview rendering in editor
+- migrated from MathJax to Katex, updated PrismJS highlighter
+- updated reachability-metadata.json
+- minor cleanup in footer scripts
+- added Mermaid support in Markdown
+- completely refactored Teams integration and fixed various issues in the Slack and Mattermost integrations
+- fixed revisions handling and the missing original revision bug, after importing an SO archive
+- fixed latency incurred when calling the sync spaces method on every request, when Teams/Slack/MM integrations are enabled
+- reverted back to sync HTTP client in Slack integration
+
 ## `1.67.1` - 2026-04-29
 - fixed broken default descending sort order
 - updated import code
