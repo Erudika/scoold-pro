@@ -1,3 +1,13 @@
+## `1.68.1` - 2026-05-26
+- refactored the handling of the new question form to prevent content duplication
+- refactoring of the Emailer class
+- fixed mention notifications should be skipped early if no mentions present in post content
+- fixed various issues with mentions, emailer, comments, search query sanitization
+- improved upload speed for S3 and Azure Blobs
+- improved export task with option to store it using storage service
+- implemented presigned links with SAS tokens in the Azure blob storage service
+- minor fix - revision not available in native image
+
 ## `1.68.0` - 2026-05-20
 - updated easyMDE editor
 - updated emojis
