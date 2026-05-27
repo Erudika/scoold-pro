@@ -1,3 +1,7 @@
+## `1.68.2` - 2026-05-27
+- added option to enable/disable rate limited posting - `scoold.rate_limited_posting_enabled = true`
+- fixed regression - answers not posting
+
 ## `1.68.1` - 2026-05-26
 - refactored the handling of the new question form to prevent content duplication
 - refactoring of the Emailer class
