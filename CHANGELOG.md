@@ -1,3 +1,33 @@
+## `1.69.0` - 2026-06-12
+- updated Spring Boot to 4.1.0 and some other dependencies
+- fixed bug in `saveConfig()` method in `AdminController`
+- added flag to force onboarding screen to appear
+- updated `reachability-metadata.json`
+- fixed onboarding issues
+- fixed space membership checks in several places (security hardening)
+- fixed comment rendering in MS Teams integration
+- fixed method override in `Emailer` class
+- fixed comment styling when containing embedded images
+- updated all localization files with new strings
+- added new option `scoold.presigned_uploads_ttl_sec` to set the TTL for presigned links to uploaded files
+- fixed Teams notification card and error message
+- fixed MS Teams integration embedded images, dialogs, etc.
+- updated Para client
+- added support for embedded hashtags in post body when creating questions from 1:1 chat with Scoold bot in Teams/MM/Slack
+- added support for presigned file links to uploaded files, to be viewed inside Teams/MM/Slack channels
+- fixed MS Teams channel not notified on answer created from 1:1 chat with bot
+- added fix to MS Teams integration dialog boxes not showing up
+- added MS Teams bot tenant id
+- added mailer settings for Para client applications
+- added new onboarding wizard when Scoold is initally started with no configuration or data
+- added service URL caching in Teams integration
+- fixed teams and channels listing on Admin page for MS Teams integration
+- fix for issue with email notification not being sent for new questions
+- minor fix for icon sizes on the signin page
+- minor fix when doing parallel stream processing
+- fixed listing teams channels on the Admin page and a NPE in `TeamsUtils`
+- fixed comments CSS
+
 ## `1.68.2` - 2026-05-27
 - added option to enable/disable rate limited posting - `scoold.rate_limited_posting_enabled = true`
 - fixed regression - answers not posting
