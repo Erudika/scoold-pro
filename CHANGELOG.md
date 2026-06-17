@@ -95,7 +95,7 @@
 
 ## `1.67.0` - 2026-04-20
 - **added MCP server implementation based on Spring AI**
-- **added new feature - personal access tokens for the Scoold API and MCP serv
+- **added new feature - personal access tokens for the Scoold API and MCP server**
 - added security checks in `ApiController` for better handling of personal access tokens
 - updated `reachability-metadata.json`
 - added personal token expiration configuration property
