@@ -1,3 +1,12 @@
+## `1.69.1` - 2026-06-25
+- refactored api token checks to allow short-lived service tokens to access /api/stats
+- updated emailer class to fix an issue with the TO: field
+- fixed deprecation warnings
+- minor CSS fix
+- fixed config editing and exposure through the API should be limited and disabled if `scoold.config_editing_enabled = false`
+- fixed CORS configuration allowing any origin too broadly
+- fixed open redirect issue in `HttpUtils`
+
 ## `1.69.0` - 2026-06-12
 - updated Spring Boot to 4.1.0 and some other dependencies
 - fixed bug in `saveConfig()` method in `AdminController`
