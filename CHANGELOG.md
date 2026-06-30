@@ -1,3 +1,7 @@
+## `1.69.2` - 2026-06-30
+- merged PR: add tests for avatar repository and generator classes
+- fixed NPE in `ScooldUtils` breaking API auth
+
 ## `1.69.1` - 2026-06-25
 - refactored api token checks to allow short-lived service tokens to access /api/stats
 - updated emailer class to fix an issue with the TO: field
