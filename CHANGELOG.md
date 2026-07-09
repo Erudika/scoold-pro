@@ -1,3 +1,13 @@
+## `1.69.3` - 2026-07-09
+- added personal token validity period selection box on settings page
+- minor fix in config docs
+- fixed bug in personal token validity period having the wrong time unit
+- fixed API endpoints for getComment() and getReport() missing additional permissions checks
+- fixed sensitive info filter for config values in MCP responses
+- added admin checks in config-related MCP tools
+- fixed bug with incorrect values in config editor on Admin page
+- fixed incorrect data type in ScooldConfig doc annotation
+
 ## `1.69.2` - 2026-06-30
 - merged PR: add tests for avatar repository and generator classes
 - fixed NPE in `ScooldUtils` breaking API auth
