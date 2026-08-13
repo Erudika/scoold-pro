@@ -1,3 +1,22 @@
+## `1.70.0` - 2026-08-13
+- added security events for almost all actions in Scoold and tied them into the new audit log feature
+- fixed issues with top contributors leaderboard
+- refactored and added traffic tracking methods in `DashboardService` class
+- updated lang_en.properties and fix minor issue with onboarding check
+- added 3rd-party license notices in `/admin/environment`
+- added new feature - admin dashboard
+- fixed profile link macro for anon users
+- fixed invalid query bug in `SearchUtils` when visiting the people page, fixed NPE in `ScooldUtils`
+- updated dependencies
+- added theme preview screenshots
+- refactored search query helper methods and moved them to `SearchUtils`
+- refactored search queries to return better results, changed default sorting to score-based instead of timestamp-based
+- fixed API returning inconsistent results due to missing space ID, when calling `GET /api/tags/{tag}/questions` endpont
+- added checkbox to enable temporary anonymous posting of content
+- added IP-based filtering for visitors trying to post anonymously, closes Erudika/scoold#479
+- fixed NPE in `Profile` class when posting anonymously
+- fixed bug in search query with spaces throwing invalid URL exception for canonical URLs
+
 ## `1.69.3` - 2026-07-09
 - added personal token validity period selection box on settings page
 - minor fix in config docs
