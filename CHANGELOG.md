@@ -1,3 +1,23 @@
+## `1.70.1` - 2026-08-27
+- updated dependencies
+- fixed minor issue in SettingsController with fav tags not being trimmed properly on save
+- fixed regular users able to approve and delete any report if ID is known
+- fixed regular users able to read any comment if ID is known via /questions/{id}?commentid= query parameter
+- fixed users with personal tokens able to delete any webhook if ID is known, via API
+- fixed users with personal tokens able to view comments for unapproved posts via API
+- fixed any user able to view unapproved posts' body and title from the revisions page, incl. via API
+- fixed users with personal tokens able to view all spaces an admin/mod is member of, via API
+- fixed users with personal tokens able to create webhooks freely via API
+- fixed users with personal tokens able read similar posts via API, without proper space filtering
+- fixed users with personal tokens able read all posts from other people's profiles via API, without proper space filtering
+- fixed users with personal tokens able to add themselves to any space via API
+- fixed  space visibility for users with personal tokens via API
+- fixed personal token validity not displayed correctly
+- fixed user data exposure when API is called personal access tokens
+- fixed feedback posts cannot be deleted bug
+- fixed ScooldConfig objects storing not calling the overriding method .store()
+- fixed color contrast in CSS for admin dashboard when using dark mode
+
 ## `1.70.0` - 2026-08-13
 - added security events for almost all actions in Scoold and tied them into the new audit log feature
 - fixed issues with top contributors leaderboard
