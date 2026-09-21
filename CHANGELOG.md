@@ -1,3 +1,11 @@
+## `1.70.2` - 2026-09-21
+- fixed duplicate IDs error on batch updating unapproved answers
+- updated Para client
+- updated dependencies
+- fixed thread blocking when Scoold is trying to connect to Para, for single-threaded environmets like Lambda
+- fixed UI bug when personal API key is revoked and the validity dropdown remains hidden
+- added new option scoold.voting_on_homepage_enabled to enable/disable the vote buttons on questions shown on the homepage
+
 ## `1.70.1` - 2026-08-27
 - updated dependencies
 - fixed minor issue in SettingsController with fav tags not being trimmed properly on save
