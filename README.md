@@ -50,9 +50,14 @@ Are you still paying per seat in 2026? **Scoold Pro** is the knowledge sharing p
 
 The documentation for Scoold Pro is located at [scoold.com/documentation](https://scoold.com/documentation/)
 
-## Scoold Pro cloud hosting
+## Cloud hosting
 
 We offer official hosting for Scoold Pro at [Scoold Cloud](https://scoold.com/cloud-hosting/).
+
+[![Deploy on Scoold Cloud](https://scoold.com/scoold_cloud_btn.svg)](https://cloud.scoold.com/signin)
+
+[![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostg.xyz/aff_c?offer_id=815&aff_id=243576&url_id=6843)
+
 
 ## Support
 
