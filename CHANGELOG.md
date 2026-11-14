@@ -1,3 +1,19 @@
+## `1.70.3` - 2026-11-14
+- added deny list for onboarding test connection endpoints
+- added missing check to onboarding connection endpoints
+- added space label breadcrumbs on tags page
+- added H1 tags in templates
+- fixed escaping of user-supplied tags in space queries
+- added canonical meta tag in base.vm
+- fixed security issues around onboarding
+- fixed deprecated Velocity escape config
+- fixed bug in relation to GHSA-2c7q-vr7m-jhfv
+- fixed incorrect visual feedback presented when the connection to backend is lost
+- fixed signin.vm template
+- restored the use of forward headers in prod
+- updated reachability-metadata.json
+- updated dependencies
+
 ## `1.70.2` - 2026-09-21
 - fixed duplicate IDs error on batch updating unapproved answers
 - updated Para client
