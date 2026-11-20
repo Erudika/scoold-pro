@@ -1,3 +1,11 @@
+## `1.70.4` - 2026-11-20
+- added tests for HTML in Velocity variables
+- fixed invalid query syntax in SearchUtils
+- fixed security issue in onboarding controller
+- reverted previous change in ScooldServer regarding HTML escaping in Velocity templates
+- added KaTeX options to support inline formulas $..$
+- added native image build argument to decrease binary size
+
 ## `1.70.3` - 2026-11-14
 - added deny list for onboarding test connection endpoints
 - added missing check to onboarding connection endpoints
