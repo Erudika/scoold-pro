@@ -1,3 +1,6 @@
+## `1.70.5` - 2026-11-22
+- fixed security issue with admin recongition method matching lowercase admin identifiers
+
 ## `1.70.4` - 2026-11-20
 - added tests for HTML in Velocity variables
 - fixed invalid query syntax in SearchUtils
